@@ -1,0 +1,52 @@
+{
+  "case_id": "MUESTRA-2026-10-A",
+  "generated_from": "Datos ficticios reproducibles; ningún archivo real de cliente",
+  "engine": "Verificador de referencia V4 (script adjunto), independiente del motor SYNAPSE",
+  "controls": {
+    "R01": "Espacios exteriores de SKU",
+    "R02": "Duplicados normalizados",
+    "R03": "Título obligatorio",
+    "R04": "Categoría en diccionario",
+    "R05": "Moneda permitida",
+    "R06": "Precio numérico positivo con formato inequívoco",
+    "R07": "Stock entero no negativo",
+    "R08": "Variante completa",
+    "R09": "Imagen HTTPS"
+  },
+  "summary": {
+    "records": 180,
+    "fields": 12,
+    "incidences": 57,
+    "safe_changes": 10,
+    "pending_incidents": 47,
+    "records_pending": 46,
+    "records_adjusted": 10,
+    "records_clear": 124,
+    "publication_status": "NO VALIDADO PARA IMPORTAR",
+    "checks": 9,
+    "sources": "1 fichero sintético",
+    "sample_id": "MUESTRA-2026-10-A",
+    "batch": "EJERCICIO CONTROLADO"
+  },
+  "files": {
+    "01_FUENTE_ORIGINAL.csv": {
+      "sha256": "eb7df1e471fbb4e639fa385ea97a61c14f26b13da6b18523b7122ec54956d926",
+      "bytes": 25562
+    },
+    "02_REVISION_PROPUESTA.csv": {
+      "sha256": "a1aa747a0055cd44664f5219fc5bbbbf043cfab6e990255e90d4dcb83fee0178",
+      "bytes": 25532
+    },
+    "03_BITACORA_INCIDENCIAS.csv": {
+      "sha256": "f63d483cff3a20de4fe37b0d5ee9f2d32e95036b626664dc586ded7d179804f7",
+      "bytes": 9576
+    }
+  },
+  "limitations": [
+    "No acredita experiencia con clientes",
+    "No prueba importación real Shopify/ERP",
+    "No es integración con el motor principal de SYNAPSE",
+    "No sustituye aprobación del responsable de datos",
+    "Los valores originales no se inventan ni corrigen cuando son ambiguos"
+  ]
+}
