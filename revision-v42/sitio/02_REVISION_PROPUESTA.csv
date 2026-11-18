@@ -1,0 +1,181 @@
+﻿record_id,supplier,sku,title,category,currency,supplier_price,stock,variant_name,variant_value,image_url,active
+P-0001,Comercial Noroeste,SKU-1001,Soporte ajustable · serie 01,Hogar,MXN,106.00,13,,,https://example.invalid/productos/p-0001.jpg,TRUE
+P-0002,Distribuciones Atlas,SKU-1002,Adaptador universal · serie 01,Papelería,MXN,123.00,26,,,https://example.invalid/productos/p-0002.jpg,TRUE
+P-0003,Proveedor Central,SKU-1003,Organizador · serie 01,Accesorios,MXN,140.00,39,Color,Negro,https://example.invalid/productos/p-0003.jpg,TRUE
+P-0004,Industria Nova,SKU-1004,Lámpara de mesa · serie 01,Electrónica,MXN,157.00,52,,,https://example.invalid/productos/p-0004.jpg,TRUE
+P-0005,Comercial Norte,SKU-1005,Caja de archivo · serie 01,Oficina,MXN,174.00,65,,,https://example.invalid/productos/p-0005.jpg,TRUE
+P-0006,Mayorista Delta,SKU-1006,Cable reforzado · serie 01,Ferretería,MXN,191.00,78,Color,Natural,https://example.invalid/productos/p-0006.jpg,TRUE
+P-0007,Comercial Noroeste,SKU-1006,Dispensador · serie 01,Hogar,MXN,208.00,12,,,https://example.invalid/productos/p-0007.jpg,TRUE
+P-0008,Distribuciones Atlas,SKU-1008,Guantes de trabajo · serie 01,Papelería,MXN,225.00,25,,,https://example.invalid/productos/p-0008.jpg,TRUE
+P-0009,Proveedor Central,SKU-1009,Juego de conectores · serie 01,Accesorios,MXN,242.00,38,Color,Negro,https://example.invalid/productos/p-0009.jpg,TRUE
+P-0010,Industria Nova,SKU-1010,Sujetador metálico · serie 01,Electrónica,MXN,259.00,51,,,https://example.invalid/productos/p-0010.jpg,TRUE
+P-0011,Comercial Norte,SKU-1011,Carpeta industrial · serie 01,Oficina,MXN,276.00,64,,,https://example.invalid/productos/p-0011.jpg,TRUE
+P-0012,Mayorista Delta,SKU-1012,Kit modular · serie 02,Ferretería,MXN,293.00,77,Color,Natural,https://example.invalid/productos/p-0012.jpg,TRUE
+P-0013,Comercial Noroeste,SKU-1013,Soporte ajustable · serie 02,Hogar,MXN,,11,,,https://example.invalid/productos/p-0013.jpg,FALSE
+P-0014,Distribuciones Atlas,SKU-1014,Adaptador universal · serie 02,Papelería,MXN,327.00,24,,,https://example.invalid/productos/p-0014.jpg,TRUE
+P-0015,Proveedor Central,SKU-1015,Organizador · serie 02,Accesorios,MXN,344.00,-3,Color,Negro,https://example.invalid/productos/p-0015.jpg,TRUE
+P-0016,Industria Nova,SKU-1016,Lámpara de mesa · serie 02,Electrónica,MXN,361.00,50,,,https://example.invalid/productos/p-0016.jpg,TRUE
+P-0017,Comercial Norte,SKU-1017,Caja de archivo · serie 02,Oficina,MXN,378.00,63,,,https://example.invalid/productos/p-0017.jpg,TRUE
+P-0018,Mayorista Delta,SKU-1018,Cable reforzado · serie 02,Ferretería,MXN,395.00,76,Color,Natural,https://example.invalid/productos/p-0018.jpg,TRUE
+P-0019,Comercial Noroeste,SKU-1019,Dispensador · serie 02,Hogar,MXN,412.00,10,,,https://example.invalid/productos/p-0019.jpg,TRUE
+P-0020,Distribuciones Atlas,SKU-1020,Guantes de trabajo · serie 02,Sin categoría,MXN,429.00,23,,,https://example.invalid/productos/p-0020.jpg,TRUE
+P-0021,Proveedor Central,SKU-1021,Juego de conectores · serie 02,Accesorios,MXN,446.00,36,Color,Negro,https://example.invalid/productos/p-0021.jpg,TRUE
+P-0022,Industria Nova,SKU-1022,Sujetador metálico · serie 02,Electrónica,MXN,463.00,49,,,https://example.invalid/productos/p-0022.jpg,TRUE
+P-0023,Comercial Norte,SKU-1023,Carpeta industrial · serie 02,Oficina,?,480.00,62,,,https://example.invalid/productos/p-0023.jpg,TRUE
+P-0024,Mayorista Delta,SKU-1024,Kit modular · serie 03,Ferretería,MXN,497.00,75,Color,Natural,https://example.invalid/productos/p-0024.jpg,TRUE
+P-0025,Comercial Noroeste,SKU-1024,Soporte ajustable · serie 03,Hogar,MXN,514.00,9,,,https://example.invalid/productos/p-0025.jpg,TRUE
+P-0026,Distribuciones Atlas,SKU-1026,Adaptador universal · serie 03,Papelería,MXN,531.00,22,,,https://example.invalid/productos/p-0026.jpg,FALSE
+P-0027,Proveedor Central,SKU-1027,Organizador · serie 03,Accesorios,MXN,548.00,35,Color,Negro,http://catalogo.ejemplo/recurso.jpg,TRUE
+P-0028,Industria Nova,SKU-1028,Lámpara de mesa · serie 03,Electrónica,MXN,565.00,48,,,https://example.invalid/productos/p-0028.jpg,TRUE
+P-0029,Comercial Norte,SKU-1029,Caja de archivo · serie 03,Oficina,MXN,582.00,61,,,https://example.invalid/productos/p-0029.jpg,TRUE
+P-0030,Mayorista Delta,SKU-1030,Cable reforzado · serie 03,Ferretería,MXN,599.00,74,Color,Natural,https://example.invalid/productos/p-0030.jpg,TRUE
+P-0031,Comercial Noroeste,SKU-1031,Dispensador · serie 03,Hogar,MXN,616.00,8,,,https://example.invalid/productos/p-0031.jpg,TRUE
+P-0032,Distribuciones Atlas,SKU-1032,Guantes de trabajo · serie 03,Papelería,MXN,633.00,21,,,https://example.invalid/productos/p-0032.jpg,TRUE
+P-0033,Proveedor Central,SKU-1033,Juego de conectores · serie 03,Accesorios,MXN,650.00,34,Color,Negro,https://example.invalid/productos/p-0033.jpg,TRUE
+P-0034,Industria Nova,SKU-1034,Sujetador metálico · serie 03,Electrónica,MXN,667.00,47,Tamaño,,https://example.invalid/productos/p-0034.jpg,TRUE
+P-0035,Comercial Norte,SKU-1035,Carpeta industrial · serie 03,Oficina,MXN,684.00,60,,,https://example.invalid/productos/p-0035.jpg,TRUE
+P-0036,Mayorista Delta,SKU-1036,Kit modular · serie 04,Ferretería,MXN,701.00,73,Color,Natural,https://example.invalid/productos/p-0036.jpg,TRUE
+P-0037,Comercial Noroeste,SKU-1037,Soporte ajustable · serie 04,Hogar,MXN,718.00,7,,,https://example.invalid/productos/p-0037.jpg,TRUE
+P-0038,Distribuciones Atlas,SKU-1038,Adaptador universal · serie 04,Papelería,MXN,735.00,20,,,https://example.invalid/productos/p-0038.jpg,TRUE
+P-0039,Proveedor Central,SKU-1039,Organizador · serie 04,Accesorios,MXN,,33,Color,Negro,https://example.invalid/productos/p-0039.jpg,FALSE
+P-0040,Industria Nova,SKU-1040,Lámpara de mesa · serie 04,Electrónica,MXN,769.00,-3,,,https://example.invalid/productos/p-0040.jpg,TRUE
+P-0041,Comercial Norte,SKU-1041,Caja de archivo · serie 04,Oficina,MXN,786.00,59,,,https://example.invalid/productos/p-0041.jpg,TRUE
+P-0042,Mayorista Delta,SKU-1042,Cable reforzado · serie 04,Ferretería,MXN,"149,50",72,Color,Natural,https://example.invalid/productos/p-0042.jpg,TRUE
+P-0043,Comercial Noroeste,SKU-1043,Dispensador · serie 04,Hogar,MXN,100.00,6,,,https://example.invalid/productos/p-0043.jpg,TRUE
+P-0044,Distribuciones Atlas,SKU-1044,Guantes de trabajo · serie 04,Papelería,MXN,117.00,19,,,https://example.invalid/productos/p-0044.jpg,TRUE
+P-0045,Proveedor Central,SKU-1045,Juego de conectores · serie 04,Accesorios,MXN,134.00,32,Color,Negro,https://example.invalid/productos/p-0045.jpg,TRUE
+P-0046,Industria Nova,SKU-1046,  ,Electrónica,MXN,151.00,45,,,https://example.invalid/productos/p-0046.jpg,TRUE
+P-0047,Comercial Norte,SKU-1047,Carpeta industrial · serie 04,Oficina,MXN,168.00,58,,,https://example.invalid/productos/p-0047.jpg,TRUE
+P-0048,Mayorista Delta,SKU-1047,Kit modular · serie 05,Ferretería,MXN,185.00,71,Color,Natural,https://example.invalid/productos/p-0048.jpg,TRUE
+P-0049,Comercial Noroeste,SKU-1049,Soporte ajustable · serie 05,Hogar,MXN,202.00,5,,,https://example.invalid/productos/p-0049.jpg,TRUE
+P-0050,Distribuciones Atlas,SKU-1050,Adaptador universal · serie 05,Papelería,MXN,219.00,18,,,https://example.invalid/productos/p-0050.jpg,TRUE
+P-0051,Proveedor Central,SKU-1051,Organizador · serie 05,Accesorios,MXN,236.00,31,Color,Negro,https://example.invalid/productos/p-0051.jpg,TRUE
+P-0052,Industria Nova,SKU-1052,Lámpara de mesa · serie 05,Electrónica,MXN,253.00,44,,,https://example.invalid/productos/p-0052.jpg,FALSE
+P-0053,Comercial Norte,SKU-1053,Caja de archivo · serie 05,Oficina,MXN,270.00,57,,,https://example.invalid/productos/p-0053.jpg,TRUE
+P-0054,Mayorista Delta,SKU-1054,Cable reforzado · serie 05,Sin categoría,MXN,287.00,70,Color,Natural,https://example.invalid/productos/p-0054.jpg,TRUE
+P-0055,Comercial Noroeste,SKU-1055,Dispensador · serie 05,Hogar,MXN,304.00,4,,,https://example.invalid/productos/p-0055.jpg,TRUE
+P-0056,Distribuciones Atlas,SKU-1056,Guantes de trabajo · serie 05,Papelería,MXN,321.00,17,,,https://example.invalid/productos/p-0056.jpg,TRUE
+P-0057,Proveedor Central,SKU-1057,Juego de conectores · serie 05,Accesorios,MXN,338.00,30,Color,Negro,https://example.invalid/productos/p-0057.jpg,TRUE
+P-0058,Industria Nova,SKU-1058,Sujetador metálico · serie 05,Electrónica,MXN,355.00,43,,,https://example.invalid/productos/p-0058.jpg,TRUE
+P-0059,Comercial Norte,SKU-1059,Carpeta industrial · serie 05,Oficina,MXN,372.00,56,,,https://example.invalid/productos/p-0059.jpg,TRUE
+P-0060,Mayorista Delta,SKU-1060,Kit modular · serie 06,Ferretería,MXN,389.00,69,Color,Natural,https://example.invalid/productos/p-0060.jpg,TRUE
+P-0061,Comercial Noroeste,SKU-1061,Soporte ajustable · serie 06,Hogar,MXN,406.00,3,,,https://example.invalid/productos/p-0061.jpg,TRUE
+P-0062,Distribuciones Atlas,SKU-1062,Adaptador universal · serie 06,Papelería,MXN,423.00,16,,,https://example.invalid/productos/p-0062.jpg,TRUE
+P-0063,Proveedor Central,SKU-1063,Organizador · serie 06,Accesorios,MXN,440.00,29,Color,Negro,https://example.invalid/productos/p-0063.jpg,TRUE
+P-0064,Industria Nova,SKU-1064,Lámpara de mesa · serie 06,Electrónica,MXN,457.00,42,,,https://example.invalid/productos/p-0064.jpg,TRUE
+P-0065,Comercial Norte,SKU-1065,Caja de archivo · serie 06,Oficina,MXN,474.00,55,,,https://example.invalid/productos/p-0065.jpg,FALSE
+P-0066,Mayorista Delta,SKU-1066,Cable reforzado · serie 06,Ferretería,MXN,491.00,-3,Color,Natural,https://example.invalid/productos/p-0066.jpg,TRUE
+P-0067,Comercial Noroeste,SKU-1067,Dispensador · serie 06,Hogar,MXN,508.00,2,,,https://example.invalid/productos/p-0067.jpg,TRUE
+P-0068,Distribuciones Atlas,SKU-1068,Guantes de trabajo · serie 06,Papelería,MXN,525.00,15,,,https://example.invalid/productos/p-0068.jpg,TRUE
+P-0069,Proveedor Central,SKU-1069,Juego de conectores · serie 06,Accesorios,MXN,542.00,28,Color,Negro,https://example.invalid/productos/p-0069.jpg,TRUE
+P-0070,Industria Nova,SKU-1070,Sujetador metálico · serie 06,Electrónica,MXN,559.00,41,,,https://example.invalid/productos/p-0070.jpg,TRUE
+P-0071,Comercial Norte,SKU-1071,Carpeta industrial · serie 06,Oficina,MXN,576.00,54,,,https://example.invalid/productos/p-0071.jpg,TRUE
+P-0072,Mayorista Delta,SKU-1072,Kit modular · serie 07,Ferretería,MXN,593.00,67,Color,Natural,https://example.invalid/productos/p-0072.jpg,TRUE
+P-0073,Comercial Noroeste,SKU-1073,Soporte ajustable · serie 07,Hogar,MXN,610.00,1,,,https://example.invalid/productos/p-0073.jpg,TRUE
+P-0074,Distribuciones Atlas,SKU-1073,Adaptador universal · serie 07,Papelería,MXN,627.00,14,,,https://example.invalid/productos/p-0074.jpg,TRUE
+P-0075,Proveedor Central,SKU-1075,Organizador · serie 07,Accesorios,MXN,644.00,27,Color,Negro,https://example.invalid/productos/p-0075.jpg,TRUE
+P-0076,Industria Nova,SKU-1076,Lámpara de mesa · serie 07,Electrónica,MXN,661.00,40,,,https://example.invalid/productos/p-0076.jpg,TRUE
+P-0077,Comercial Norte,SKU-1077,Caja de archivo · serie 07,Oficina,MXN,678.00,53,,,https://example.invalid/productos/p-0077.jpg,TRUE
+P-0078,Mayorista Delta,SKU-1078,Cable reforzado · serie 07,Ferretería,MXN,695.00,66,Color,Natural,https://example.invalid/productos/p-0078.jpg,FALSE
+P-0079,Comercial Noroeste,SKU-1079,Dispensador · serie 07,Hogar,MXN,712.00,0,,,https://example.invalid/productos/p-0079.jpg,TRUE
+P-0080,Distribuciones Atlas,SKU-1080,Guantes de trabajo · serie 07,Papelería,MXN,729.00,13,,,https://example.invalid/productos/p-0080.jpg,TRUE
+P-0081,Proveedor Central,SKU-1081,Juego de conectores · serie 07,Accesorios,MXN,746.00,26,Color,Negro,https://example.invalid/productos/p-0081.jpg,TRUE
+P-0082,Industria Nova,SKU-1082,Sujetador metálico · serie 07,Electrónica,MXN,763.00,39,,,https://example.invalid/productos/p-0082.jpg,TRUE
+P-0083,Comercial Norte,SKU-1083,Carpeta industrial · serie 07,Oficina,MXN,780.00,52,,,https://example.invalid/productos/p-0083.jpg,TRUE
+P-0084,Mayorista Delta,SKU-1084,Kit modular · serie 08,Ferretería,MXN,797.00,65,Color,Natural,https://example.invalid/productos/p-0084.jpg,TRUE
+P-0085,Comercial Noroeste,SKU-1085,Soporte ajustable · serie 08,Hogar,MXN,,78,,,https://example.invalid/productos/p-0085.jpg,TRUE
+P-0086,Distribuciones Atlas,SKU-1086,Adaptador universal · serie 08,Papelería,MXN,111.00,12,,,https://example.invalid/productos/p-0086.jpg,TRUE
+P-0087,Proveedor Central,SKU-1087,Organizador · serie 08,Accesorios,?,128.00,25,Color,Negro,https://example.invalid/productos/p-0087.jpg,TRUE
+P-0088,Industria Nova,SKU-1088,Lámpara de mesa · serie 08,Electrónica,MXN,145.00,38,,,https://example.invalid/productos/p-0088.jpg,TRUE
+P-0089,Comercial Norte,SKU-1089,Caja de archivo · serie 08,Oficina,MXN,162.00,51,,,https://example.invalid/productos/p-0089.jpg,TRUE
+P-0090,Mayorista Delta,SKU-1090,Cable reforzado · serie 08,Ferretería,MXN,179.00,64,Tamaño,,https://example.invalid/productos/p-0090.jpg,TRUE
+P-0091,Comercial Noroeste,SKU-1091,Dispensador · serie 08,Hogar,MXN,196.00,77,,,http://catalogo.ejemplo/recurso.jpg,FALSE
+P-0092,Distribuciones Atlas,SKU-1092,Guantes de trabajo · serie 08,Papelería,MXN,213.00,11,,,https://example.invalid/productos/p-0092.jpg,TRUE
+P-0093,Proveedor Central,SKU-1093,Juego de conectores · serie 08,Accesorios,MXN,230.00,24,Color,Negro,https://example.invalid/productos/p-0093.jpg,TRUE
+P-0094,Industria Nova,SKU-1094,  ,Electrónica,MXN,247.00,37,,,https://example.invalid/productos/p-0094.jpg,TRUE
+P-0095,Comercial Norte,SKU-1095,Carpeta industrial · serie 08,Oficina,MXN,264.00,50,,,https://example.invalid/productos/p-0095.jpg,TRUE
+P-0096,Mayorista Delta,SKU-1096,Kit modular · serie 09,Ferretería,MXN,281.00,63,Color,Natural,https://example.invalid/productos/p-0096.jpg,TRUE
+P-0097,Comercial Noroeste,SKU-1097,Soporte ajustable · serie 09,Hogar,MXN,298.00,76,,,https://example.invalid/productos/p-0097.jpg,TRUE
+P-0098,Distribuciones Atlas,SKU-1098,Adaptador universal · serie 09,Papelería,MXN,315.00,10,,,https://example.invalid/productos/p-0098.jpg,TRUE
+P-0099,Proveedor Central,SKU-1099,Organizador · serie 09,Accesorios,MXN,332.00,23,Color,Negro,https://example.invalid/productos/p-0099.jpg,TRUE
+P-0100,Industria Nova,SKU-1100,Lámpara de mesa · serie 09,Sin categoría,MXN,349.00,36,,,https://example.invalid/productos/p-0100.jpg,TRUE
+P-0101,Comercial Norte,SKU-1101,Caja de archivo · serie 09,Oficina,MXN,366.00,49,,,https://example.invalid/productos/p-0101.jpg,TRUE
+P-0102,Mayorista Delta,SKU-1102,Cable reforzado · serie 09,Ferretería,MXN,"149,50",62,Color,Natural,https://example.invalid/productos/p-0102.jpg,TRUE
+P-0103,Comercial Noroeste,SKU-1102,Dispensador · serie 09,Hogar,MXN,400.00,75,,,https://example.invalid/productos/p-0103.jpg,TRUE
+P-0104,Distribuciones Atlas,SKU-1104,Guantes de trabajo · serie 09,Papelería,MXN,417.00,9,,,https://example.invalid/productos/p-0104.jpg,FALSE
+P-0105,Proveedor Central,SKU-1105,Juego de conectores · serie 09,Accesorios,MXN,434.00,22,Color,Negro,https://example.invalid/productos/p-0105.jpg,TRUE
+P-0106,Industria Nova,SKU-1106,Sujetador metálico · serie 09,Electrónica,MXN,451.00,35,,,https://example.invalid/productos/p-0106.jpg,TRUE
+P-0107,Comercial Norte,SKU-1107,Carpeta industrial · serie 09,Oficina,MXN,468.00,48,,,https://example.invalid/productos/p-0107.jpg,TRUE
+P-0108,Mayorista Delta,SKU-1108,Kit modular · serie 10,Ferretería,MXN,485.00,61,Color,Natural,https://example.invalid/productos/p-0108.jpg,TRUE
+P-0109,Comercial Noroeste,SKU-1109,Soporte ajustable · serie 10,Hogar,MXN,502.00,74,,,https://example.invalid/productos/p-0109.jpg,TRUE
+P-0110,Distribuciones Atlas,SKU-1110,Adaptador universal · serie 10,Papelería,MXN,519.00,8,,,https://example.invalid/productos/p-0110.jpg,TRUE
+P-0111,Proveedor Central,SKU-1111,Organizador · serie 10,Accesorios,MXN,,21,Color,Negro,https://example.invalid/productos/p-0111.jpg,TRUE
+P-0112,Industria Nova,SKU-1112,Lámpara de mesa · serie 10,Electrónica,MXN,553.00,34,,,https://example.invalid/productos/p-0112.jpg,TRUE
+P-0113,Comercial Norte,SKU-1113,Caja de archivo · serie 10,Oficina,MXN,570.00,47,,,https://example.invalid/productos/p-0113.jpg,TRUE
+P-0114,Mayorista Delta,SKU-1114,Cable reforzado · serie 10,Ferretería,MXN,587.00,60,Color,Natural,http://catalogo.ejemplo/recurso.jpg,TRUE
+P-0115,Comercial Noroeste,SKU-1115,Dispensador · serie 10,Hogar,MXN,604.00,73,,,https://example.invalid/productos/p-0115.jpg,TRUE
+P-0116,Distribuciones Atlas,SKU-1116,Guantes de trabajo · serie 10,Papelería,MXN,621.00,7,,,https://example.invalid/productos/p-0116.jpg,TRUE
+P-0117,Proveedor Central,SKU-1117,Juego de conectores · serie 10,Accesorios,MXN,638.00,20,Color,Negro,https://example.invalid/productos/p-0117.jpg,FALSE
+P-0118,Industria Nova,SKU-1118,Sujetador metálico · serie 10,Electrónica,MXN,655.00,33,,,https://example.invalid/productos/p-0118.jpg,TRUE
+P-0119,Comercial Norte,SKU-1119,Carpeta industrial · serie 10,Oficina,MXN,672.00,46,,,https://example.invalid/productos/p-0119.jpg,TRUE
+P-0120,Mayorista Delta,SKU-1120,Kit modular · serie 11,Ferretería,MXN,689.00,59,Color,Natural,https://example.invalid/productos/p-0120.jpg,TRUE
+P-0121,Comercial Noroeste,SKU-1121,Soporte ajustable · serie 11,Hogar,MXN,706.00,-3,,,https://example.invalid/productos/p-0121.jpg,TRUE
+P-0122,Distribuciones Atlas,SKU-1122,Adaptador universal · serie 11,Papelería,MXN,723.00,6,,,https://example.invalid/productos/p-0122.jpg,TRUE
+P-0123,Proveedor Central,SKU-1123,Organizador · serie 11,Accesorios,MXN,740.00,19,Color,Negro,https://example.invalid/productos/p-0123.jpg,TRUE
+P-0124,Industria Nova,SKU-1124,Lámpara de mesa · serie 11,Electrónica,MXN,757.00,32,,,https://example.invalid/productos/p-0124.jpg,TRUE
+P-0125,Comercial Norte,SKU-1125,Caja de archivo · serie 11,Oficina,MXN,774.00,45,Tamaño,,https://example.invalid/productos/p-0125.jpg,TRUE
+P-0126,Mayorista Delta,SKU-1126,Cable reforzado · serie 11,Ferretería,MXN,791.00,58,Color,Natural,https://example.invalid/productos/p-0126.jpg,TRUE
+P-0127,Comercial Noroeste,SKU-1127,Dispensador · serie 11,Hogar,MXN,808.00,71,,,https://example.invalid/productos/p-0127.jpg,TRUE
+P-0128,Distribuciones Atlas,SKU-1128,Guantes de trabajo · serie 11,Papelería,MXN,105.00,5,,,https://example.invalid/productos/p-0128.jpg,TRUE
+P-0129,Proveedor Central,SKU-1129,Juego de conectores · serie 11,Accesorios,MXN,122.00,18,Color,Negro,https://example.invalid/productos/p-0129.jpg,TRUE
+P-0130,Industria Nova,SKU-1129,Sujetador metálico · serie 11,Electrónica,MXN,139.00,31,,,https://example.invalid/productos/p-0130.jpg,FALSE
+P-0131,Comercial Norte,SKU-1131,Carpeta industrial · serie 11,Oficina,MXN,156.00,44,,,https://example.invalid/productos/p-0131.jpg,TRUE
+P-0132,Mayorista Delta,SKU-1132,  ,Ferretería,MXN,173.00,57,Color,Natural,https://example.invalid/productos/p-0132.jpg,TRUE
+P-0133,Comercial Noroeste,SKU-1133,Soporte ajustable · serie 12,Hogar,MXN,190.00,70,,,https://example.invalid/productos/p-0133.jpg,TRUE
+P-0134,Distribuciones Atlas,SKU-1134,Adaptador universal · serie 12,Papelería,MXN,207.00,4,,,https://example.invalid/productos/p-0134.jpg,TRUE
+P-0135,Proveedor Central,SKU-1135,Organizador · serie 12,Accesorios,MXN,224.00,17,Color,Negro,https://example.invalid/productos/p-0135.jpg,TRUE
+P-0136,Industria Nova,SKU-1136,Lámpara de mesa · serie 12,Electrónica,MXN,241.00,30,,,https://example.invalid/productos/p-0136.jpg,TRUE
+P-0137,Comercial Norte,SKU-1137,Caja de archivo · serie 12,Oficina,MXN,258.00,43,,,https://example.invalid/productos/p-0137.jpg,TRUE
+P-0138,Mayorista Delta,SKU-1138,Cable reforzado · serie 12,Ferretería,?,275.00,56,Color,Natural,https://example.invalid/productos/p-0138.jpg,TRUE
+P-0139,Comercial Noroeste,SKU-1139,Dispensador · serie 12,Hogar,MXN,292.00,69,,,https://example.invalid/productos/p-0139.jpg,TRUE
+P-0140,Distribuciones Atlas,SKU-1140,Guantes de trabajo · serie 12,Papelería,MXN,309.00,3,,,https://example.invalid/productos/p-0140.jpg,TRUE
+P-0141,Proveedor Central,SKU-1141,Juego de conectores · serie 12,Accesorios,MXN,326.00,16,Color,Negro,https://example.invalid/productos/p-0141.jpg,TRUE
+P-0142,Industria Nova,SKU-1142,Sujetador metálico · serie 12,Sin categoría,MXN,343.00,29,,,https://example.invalid/productos/p-0142.jpg,TRUE
+P-0143,Comercial Norte,SKU-1143,Carpeta industrial · serie 12,Oficina,MXN,360.00,42,,,https://example.invalid/productos/p-0143.jpg,FALSE
+P-0144,Mayorista Delta,SKU-1144,Kit modular · serie 13,Ferretería,MXN,377.00,55,Color,Natural,https://example.invalid/productos/p-0144.jpg,TRUE
+P-0145,Comercial Noroeste,SKU-1145,Soporte ajustable · serie 13,Hogar,MXN,394.00,68,,,https://example.invalid/productos/p-0145.jpg,TRUE
+P-0146,Distribuciones Atlas,SKU-1146,Adaptador universal · serie 13,Papelería,MXN,411.00,2,,,https://example.invalid/productos/p-0146.jpg,TRUE
+P-0147,Proveedor Central,SKU-1147,Organizador · serie 13,Accesorios,MXN,428.00,15,Color,Negro,https://example.invalid/productos/p-0147.jpg,TRUE
+P-0148,Industria Nova,SKU-1148,Lámpara de mesa · serie 13,Electrónica,MXN,445.00,28,,,http://catalogo.ejemplo/recurso.jpg,TRUE
+P-0149,Comercial Norte,SKU-1149,Caja de archivo · serie 13,Oficina,MXN,462.00,41,,,https://example.invalid/productos/p-0149.jpg,TRUE
+P-0150,Mayorista Delta,SKU-1150,Cable reforzado · serie 13,Ferretería,MXN,479.00,54,Color,Natural,https://example.invalid/productos/p-0150.jpg,TRUE
+P-0151,Comercial Noroeste,SKU-1151,Dispensador · serie 13,Hogar,MXN,496.00,67,,,https://example.invalid/productos/p-0151.jpg,TRUE
+P-0152,Distribuciones Atlas,SKU-1152,Guantes de trabajo · serie 13,Papelería,MXN,513.00,1,,,https://example.invalid/productos/p-0152.jpg,TRUE
+P-0153,Proveedor Central,SKU-1152,Juego de conectores · serie 13,Accesorios,MXN,530.00,14,Color,Negro,https://example.invalid/productos/p-0153.jpg,TRUE
+P-0154,Industria Nova,SKU-1154,Sujetador metálico · serie 13,Electrónica,MXN,547.00,27,,,https://example.invalid/productos/p-0154.jpg,TRUE
+P-0155,Comercial Norte,SKU-1155,Carpeta industrial · serie 13,Oficina,MXN,564.00,40,,,https://example.invalid/productos/p-0155.jpg,TRUE
+P-0156,Mayorista Delta,SKU-1156,Kit modular · serie 14,Ferretería,MXN,581.00,53,Color,Natural,https://example.invalid/productos/p-0156.jpg,FALSE
+P-0157,Comercial Noroeste,SKU-1157,Soporte ajustable · serie 14,Hogar,MXN,598.00,66,,,https://example.invalid/productos/p-0157.jpg,TRUE
+P-0158,Distribuciones Atlas,SKU-1158,Adaptador universal · serie 14,Papelería,MXN,615.00,0,,,https://example.invalid/productos/p-0158.jpg,TRUE
+P-0159,Proveedor Central,SKU-1159,Organizador · serie 14,Accesorios,MXN,632.00,-3,Color,Negro,https://example.invalid/productos/p-0159.jpg,TRUE
+P-0160,Industria Nova,SKU-1160,Lámpara de mesa · serie 14,Electrónica,MXN,,26,,,https://example.invalid/productos/p-0160.jpg,TRUE
+P-0161,Comercial Norte,SKU-1161,Caja de archivo · serie 14,Oficina,MXN,666.00,39,,,https://example.invalid/productos/p-0161.jpg,TRUE
+P-0162,Mayorista Delta,SKU-1162,Cable reforzado · serie 14,Ferretería,MXN,683.00,52,Color,Natural,https://example.invalid/productos/p-0162.jpg,TRUE
+P-0163,Comercial Noroeste,SKU-1163,Dispensador · serie 14,Hogar,MXN,700.00,65,,,https://example.invalid/productos/p-0163.jpg,TRUE
+P-0164,Distribuciones Atlas,SKU-1164,Guantes de trabajo · serie 14,Papelería,MXN,717.00,78,,,https://example.invalid/productos/p-0164.jpg,TRUE
+P-0165,Proveedor Central,SKU-1165,Juego de conectores · serie 14,Accesorios,MXN,734.00,12,Color,Negro,https://example.invalid/productos/p-0165.jpg,TRUE
+P-0166,Industria Nova,SKU-1166,Sujetador metálico · serie 14,Electrónica,MXN,751.00,25,,,https://example.invalid/productos/p-0166.jpg,TRUE
+P-0167,Comercial Norte,SKU-1167,Carpeta industrial · serie 14,Oficina,MXN,768.00,38,,,https://example.invalid/productos/p-0167.jpg,TRUE
+P-0168,Mayorista Delta,SKU-1168,Kit modular · serie 15,Ferretería,MXN,785.00,51,Color,Natural,https://example.invalid/productos/p-0168.jpg,TRUE
+P-0169,Comercial Noroeste,SKU-1169,Soporte ajustable · serie 15,Hogar,MXN,802.00,64,,,https://example.invalid/productos/p-0169.jpg,FALSE
+P-0170,Distribuciones Atlas,SKU-1170,Adaptador universal · serie 15,Papelería,MXN,99.00,77,Tamaño,,https://example.invalid/productos/p-0170.jpg,TRUE
+P-0171,Proveedor Central,SKU-1171,Organizador · serie 15,Accesorios,MXN,116.00,11,Color,Negro,https://example.invalid/productos/p-0171.jpg,TRUE
+P-0172,Industria Nova,SKU-1172,Lámpara de mesa · serie 15,Electrónica,MXN,133.00,24,,,https://example.invalid/productos/p-0172.jpg,TRUE
+P-0173,Comercial Norte,SKU-1173,Caja de archivo · serie 15,Oficina,MXN,150.00,37,,,https://example.invalid/productos/p-0173.jpg,TRUE
+P-0174,Mayorista Delta,SKU-1174,Cable reforzado · serie 15,Ferretería,MXN,,50,Color,Natural,https://example.invalid/productos/p-0174.jpg,TRUE
+P-0175,Comercial Noroeste,SKU-1175,Dispensador · serie 15,Hogar,MXN,184.00,63,,,https://example.invalid/productos/p-0175.jpg,TRUE
+P-0176,Distribuciones Atlas,SKU-1176,Guantes de trabajo · serie 15,Sin categoría,MXN,201.00,76,,,https://example.invalid/productos/p-0176.jpg,TRUE
+P-0177,Proveedor Central,SKU-1177,Juego de conectores · serie 15,Accesorios,MXN,218.00,10,Color,Negro,https://example.invalid/productos/p-0177.jpg,TRUE
+P-0178,Industria Nova,SKU-1178,Sujetador metálico · serie 15,Electrónica,MXN,235.00,23,,,https://example.invalid/productos/p-0178.jpg,TRUE
+P-0179,Comercial Norte,SKU-1179,  ,Oficina,MXN,252.00,36,,,https://example.invalid/productos/p-0179.jpg,TRUE
+P-0180,Mayorista Delta,SKU-1180,Kit modular · serie 16,Ferretería,MXN,269.00,49,Color,Natural,https://example.invalid/productos/p-0180.jpg,TRUE

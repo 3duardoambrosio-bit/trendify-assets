@@ -1,0 +1,58 @@
+﻿id,record_id,field,rule,severity,finding,before,after,decision,owner,note
+INC-001,P-0004,sku,R01,Ajuste seguro,Espacios externos en identificador, SKU-1004  ,SKU-1004,NORMALIZADO,Operador,Solo se eliminan espacios externos; se conserva el valor interno.
+INC-002,P-0006,sku,R02,Bloqueante,Identificador duplicado,SKU-1006,SKU-1006,PENDIENTE,Responsable de datos,No se fusionan productos ni se elige un SKU alternativo sin instrucción.
+INC-003,P-0007,sku,R02,Bloqueante,Identificador duplicado,SKU-1006,SKU-1006,PENDIENTE,Responsable de datos,No se fusionan productos ni se elige un SKU alternativo sin instrucción.
+INC-004,P-0013,supplier_price,R06,Bloqueante,Precio ausente,,,PENDIENTE,Responsable de datos,Solicitar precio vigente a proveedor.
+INC-005,P-0015,stock,R07,Bloqueante,Stock negativo o no entero,-3,-3,PENDIENTE,Responsable de datos,Confirmar existencias; no sustituir por cero.
+INC-006,P-0019,sku,R01,Ajuste seguro,Espacios externos en identificador, SKU-1019  ,SKU-1019,NORMALIZADO,Operador,Solo se eliminan espacios externos; se conserva el valor interno.
+INC-007,P-0020,category,R04,Bloqueante,Categoría fuera del diccionario,Sin categoría,Sin categoría,PENDIENTE,Responsable de datos,Asignación sujeta a catálogo autorizado.
+INC-008,P-0023,currency,R05,Bloqueante,Moneda inválida,?,?,PENDIENTE,Responsable de datos,No convertir ni inferir divisa.
+INC-009,P-0024,sku,R02,Bloqueante,Identificador duplicado,SKU-1024,SKU-1024,PENDIENTE,Responsable de datos,No se fusionan productos ni se elige un SKU alternativo sin instrucción.
+INC-010,P-0025,sku,R02,Bloqueante,Identificador duplicado,SKU-1024,SKU-1024,PENDIENTE,Responsable de datos,No se fusionan productos ni se elige un SKU alternativo sin instrucción.
+INC-011,P-0027,image_url,R09,Revisión,Imagen sin HTTPS,http://catalogo.ejemplo/recurso.jpg,http://catalogo.ejemplo/recurso.jpg,PENDIENTE,Responsable de datos,Requiere una URL válida antes de una importación que la exija.
+INC-012,P-0031,sku,R01,Ajuste seguro,Espacios externos en identificador, SKU-1031  ,SKU-1031,NORMALIZADO,Operador,Solo se eliminan espacios externos; se conserva el valor interno.
+INC-013,P-0034,variant_value,R08,Bloqueante,Variante incompleta,,,PENDIENTE,Responsable de datos,Falta valor de variante; se consulta al responsable.
+INC-014,P-0039,supplier_price,R06,Bloqueante,Precio ausente,,,PENDIENTE,Responsable de datos,Solicitar precio vigente a proveedor.
+INC-015,P-0040,stock,R07,Bloqueante,Stock negativo o no entero,-3,-3,PENDIENTE,Responsable de datos,Confirmar existencias; no sustituir por cero.
+INC-016,P-0042,supplier_price,R06,Bloqueante,Formato de precio ambiguo,"149,50","149,50",PENDIENTE,Responsable de datos,"149,50 podría representar 149.50 o 14,950. Requiere convención del proveedor."
+INC-017,P-0046,title,R03,Bloqueante,Título vacío,  ,  ,PENDIENTE,Responsable de datos,Requiere nombre oficial de producto.
+INC-018,P-0047,sku,R02,Bloqueante,Identificador duplicado,SKU-1047,SKU-1047,PENDIENTE,Responsable de datos,No se fusionan productos ni se elige un SKU alternativo sin instrucción.
+INC-019,P-0048,sku,R02,Bloqueante,Identificador duplicado,SKU-1047,SKU-1047,PENDIENTE,Responsable de datos,No se fusionan productos ni se elige un SKU alternativo sin instrucción.
+INC-020,P-0049,sku,R01,Ajuste seguro,Espacios externos en identificador, SKU-1049  ,SKU-1049,NORMALIZADO,Operador,Solo se eliminan espacios externos; se conserva el valor interno.
+INC-021,P-0054,category,R04,Bloqueante,Categoría fuera del diccionario,Sin categoría,Sin categoría,PENDIENTE,Responsable de datos,Asignación sujeta a catálogo autorizado.
+INC-022,P-0062,sku,R01,Ajuste seguro,Espacios externos en identificador, SKU-1062  ,SKU-1062,NORMALIZADO,Operador,Solo se eliminan espacios externos; se conserva el valor interno.
+INC-023,P-0066,stock,R07,Bloqueante,Stock negativo o no entero,-3,-3,PENDIENTE,Responsable de datos,Confirmar existencias; no sustituir por cero.
+INC-024,P-0073,sku,R02,Bloqueante,Identificador duplicado,SKU-1073,SKU-1073,PENDIENTE,Responsable de datos,No se fusionan productos ni se elige un SKU alternativo sin instrucción.
+INC-025,P-0074,sku,R02,Bloqueante,Identificador duplicado,SKU-1073,SKU-1073,PENDIENTE,Responsable de datos,No se fusionan productos ni se elige un SKU alternativo sin instrucción.
+INC-026,P-0077,sku,R01,Ajuste seguro,Espacios externos en identificador, SKU-1077  ,SKU-1077,NORMALIZADO,Operador,Solo se eliminan espacios externos; se conserva el valor interno.
+INC-027,P-0085,supplier_price,R06,Bloqueante,Precio ausente,,,PENDIENTE,Responsable de datos,Solicitar precio vigente a proveedor.
+INC-028,P-0087,currency,R05,Bloqueante,Moneda inválida,?,?,PENDIENTE,Responsable de datos,No convertir ni inferir divisa.
+INC-029,P-0090,variant_value,R08,Bloqueante,Variante incompleta,,,PENDIENTE,Responsable de datos,Falta valor de variante; se consulta al responsable.
+INC-030,P-0091,image_url,R09,Revisión,Imagen sin HTTPS,http://catalogo.ejemplo/recurso.jpg,http://catalogo.ejemplo/recurso.jpg,PENDIENTE,Responsable de datos,Requiere una URL válida antes de una importación que la exija.
+INC-031,P-0093,sku,R01,Ajuste seguro,Espacios externos en identificador, SKU-1093  ,SKU-1093,NORMALIZADO,Operador,Solo se eliminan espacios externos; se conserva el valor interno.
+INC-032,P-0094,title,R03,Bloqueante,Título vacío,  ,  ,PENDIENTE,Responsable de datos,Requiere nombre oficial de producto.
+INC-033,P-0100,category,R04,Bloqueante,Categoría fuera del diccionario,Sin categoría,Sin categoría,PENDIENTE,Responsable de datos,Asignación sujeta a catálogo autorizado.
+INC-034,P-0102,sku,R02,Bloqueante,Identificador duplicado,SKU-1102,SKU-1102,PENDIENTE,Responsable de datos,No se fusionan productos ni se elige un SKU alternativo sin instrucción.
+INC-035,P-0102,supplier_price,R06,Bloqueante,Formato de precio ambiguo,"149,50","149,50",PENDIENTE,Responsable de datos,"149,50 podría representar 149.50 o 14,950. Requiere convención del proveedor."
+INC-036,P-0103,sku,R02,Bloqueante,Identificador duplicado,SKU-1102,SKU-1102,PENDIENTE,Responsable de datos,No se fusionan productos ni se elige un SKU alternativo sin instrucción.
+INC-037,P-0111,supplier_price,R06,Bloqueante,Precio ausente,,,PENDIENTE,Responsable de datos,Solicitar precio vigente a proveedor.
+INC-038,P-0114,image_url,R09,Revisión,Imagen sin HTTPS,http://catalogo.ejemplo/recurso.jpg,http://catalogo.ejemplo/recurso.jpg,PENDIENTE,Responsable de datos,Requiere una URL válida antes de una importación que la exija.
+INC-039,P-0117,sku,R01,Ajuste seguro,Espacios externos en identificador, SKU-1117  ,SKU-1117,NORMALIZADO,Operador,Solo se eliminan espacios externos; se conserva el valor interno.
+INC-040,P-0121,stock,R07,Bloqueante,Stock negativo o no entero,-3,-3,PENDIENTE,Responsable de datos,Confirmar existencias; no sustituir por cero.
+INC-041,P-0125,variant_value,R08,Bloqueante,Variante incompleta,,,PENDIENTE,Responsable de datos,Falta valor de variante; se consulta al responsable.
+INC-042,P-0129,sku,R02,Bloqueante,Identificador duplicado,SKU-1129,SKU-1129,PENDIENTE,Responsable de datos,No se fusionan productos ni se elige un SKU alternativo sin instrucción.
+INC-043,P-0130,sku,R02,Bloqueante,Identificador duplicado,SKU-1129,SKU-1129,PENDIENTE,Responsable de datos,No se fusionan productos ni se elige un SKU alternativo sin instrucción.
+INC-044,P-0132,title,R03,Bloqueante,Título vacío,  ,  ,PENDIENTE,Responsable de datos,Requiere nombre oficial de producto.
+INC-045,P-0138,currency,R05,Bloqueante,Moneda inválida,?,?,PENDIENTE,Responsable de datos,No convertir ni inferir divisa.
+INC-046,P-0142,category,R04,Bloqueante,Categoría fuera del diccionario,Sin categoría,Sin categoría,PENDIENTE,Responsable de datos,Asignación sujeta a catálogo autorizado.
+INC-047,P-0145,sku,R01,Ajuste seguro,Espacios externos en identificador, SKU-1145  ,SKU-1145,NORMALIZADO,Operador,Solo se eliminan espacios externos; se conserva el valor interno.
+INC-048,P-0148,image_url,R09,Revisión,Imagen sin HTTPS,http://catalogo.ejemplo/recurso.jpg,http://catalogo.ejemplo/recurso.jpg,PENDIENTE,Responsable de datos,Requiere una URL válida antes de una importación que la exija.
+INC-049,P-0152,sku,R02,Bloqueante,Identificador duplicado,SKU-1152,SKU-1152,PENDIENTE,Responsable de datos,No se fusionan productos ni se elige un SKU alternativo sin instrucción.
+INC-050,P-0153,sku,R02,Bloqueante,Identificador duplicado,SKU-1152,SKU-1152,PENDIENTE,Responsable de datos,No se fusionan productos ni se elige un SKU alternativo sin instrucción.
+INC-051,P-0159,stock,R07,Bloqueante,Stock negativo o no entero,-3,-3,PENDIENTE,Responsable de datos,Confirmar existencias; no sustituir por cero.
+INC-052,P-0160,supplier_price,R06,Bloqueante,Precio ausente,,,PENDIENTE,Responsable de datos,Solicitar precio vigente a proveedor.
+INC-053,P-0168,sku,R01,Ajuste seguro,Espacios externos en identificador, SKU-1168  ,SKU-1168,NORMALIZADO,Operador,Solo se eliminan espacios externos; se conserva el valor interno.
+INC-054,P-0170,variant_value,R08,Bloqueante,Variante incompleta,,,PENDIENTE,Responsable de datos,Falta valor de variante; se consulta al responsable.
+INC-055,P-0174,supplier_price,R06,Bloqueante,Precio ausente,,,PENDIENTE,Responsable de datos,Solicitar precio vigente a proveedor.
+INC-056,P-0176,category,R04,Bloqueante,Categoría fuera del diccionario,Sin categoría,Sin categoría,PENDIENTE,Responsable de datos,Asignación sujeta a catálogo autorizado.
+INC-057,P-0179,title,R03,Bloqueante,Título vacío,  ,  ,PENDIENTE,Responsable de datos,Requiere nombre oficial de producto.
