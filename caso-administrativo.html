@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#172521">
+<meta name="robots" content="index,follow">
+<title>Un sistema de seguimiento, no otra lista | ORDENAL</title>
+<meta name="description" content="Demostración sintética e interactiva de una intervención administrativa con control de solicitudes, responsables, riesgos, evidencia y decisiones.">
+<link rel="stylesheet" href="assets/site.css">
+<link rel="stylesheet" href="assets/admin-case.css">
+<script defer src="assets/admin-case-data.js"></script>
+<script defer src="assets/admin-case.js"></script>
+<style>body{font-size:16px}@media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important;animation:none!important}}</style><style>html{scroll-behavior:auto}#context-return{display:inline-flex;align-items:center;min-height:44px}.case-exit{display:flex;flex-wrap:wrap;align-items:center;gap:6px 16px;border-top:1px solid #b5c6b8;padding-top:8px;margin:16px 0 0}.case-exit a{display:inline-flex;align-items:center;min-height:44px;color:#19563f;font-weight:650;text-decoration:underline;text-underline-offset:3px}.case-exit a:focus-visible{outline:3px solid #904115;outline-offset:2px}#inspector{scroll-margin-top:4rem}</style><link rel="canonical" href="https://3duardoambrosio-bit.github.io/trendify-assets/caso-administrativo.html"></head>
+<body class="admin-case-page"><div style="padding:12px 20px;background:#183a2d;color:#fff;font:16px/1.5 system-ui"><a id="context-return" data-home="index.html" href="index.html#mesa" style="color:#fff;text-underline-offset:4px">Volver a la situación en ORDENAL</a></div>
+<a class="skip-link" href="#principal">Saltar al contenido</a>
+<header class="admin-header">
+ <div class="shell admin-head-inner">
+  <a class="admin-brand" href="index.html" aria-label="ORDENAL, volver al sitio principal"><img src="assets/ordenal-marca.svg" width="142" height="28" style="display:block;max-width:100%;height:auto;background:#f6f3ea;padding:3px 5px;box-sizing:content-box" alt="ORDENAL"></a>
+  <nav class="admin-head-links" aria-label="Navegación del caso"><a href="#metodo-caso">Método</a><a href="#mesa">Explorar casos</a><a href="#evidencia-caso">Evidencia</a><a class="admin-contact" href="consulta.html?area=operaciones">Hablar de mi operación <span aria-hidden="true">↗</span></a></nav>
+ </div>
+</header><p id="op-load-state" style="padding:16px;background:#f6eee4;color:#172d24">Si la tabla no aparece, los datos de OP001 no se cargaron. Puedes revisar la <a href="data/solicitudes_sinteticas.csv">fuente CSV</a> y la <a href="data/salida_evaluada.json">salida documentada</a>. No hay un resultado validado en una tabla vacía.</p>
+<aside style="max-width:1200px;margin:1rem auto;padding:1rem;border-left:3px solid #87502f;background:#f6eee4">Muestra sintética al corte fijo del 18 de noviembre de 2026. Las fechas de ese día se consideran alcanzadas. Las dependencias y referencias de soporte son datos declarados; este ejercicio no verifica documentos externos ni aceptación de tareas anteriores. Sin alertas no significa aprobado.</aside><main id="principal">
+<section class="admin-hero" aria-labelledby="admin-hero-title">
+ <div class="shell admin-hero-inner">
+  <div class="admin-hero-copy">
+   <p class="admin-eyebrow"><span class="admin-glow" aria-hidden="true"></span> CASO 01 / OPERACIONES ADMINISTRATIVAS</p>
+   <h1 id="admin-hero-title">El problema no es tener pendientes. <em>Es perder el control entre uno y otro.</em></h1>
+   <p class="admin-lede">Una operación crece. Las solicitudes llegan por correo, formularios, hojas y mensajes. Lo que parece una lista de tareas termina afectando compras, pagos, entregas y clientes. Aquí mostramos cómo darles estructura <strong>antes de mover una sola decisión crítica.</strong></p>
+   <div class="admin-hero-buttons"><a class="admin-action admin-action-primary" href="#mesa">Explorar la mesa de control <span aria-hidden="true">↗</span></a><a class="admin-action admin-action-ghost" href="#metodo-caso">Entender el método</a></div>
+   <p class="admin-hero-foot">Ejercicio construido con 32 solicitudes ficticias. Ningún dato pertenece a un cliente; no se ejecutan operaciones ni se acreditan ahorros.</p>
+  </div>
+  <div class="admin-hero-panel" aria-label="Resumen calculado de las solicitudes ficticias">
+   <div class="admin-panel-top"><span>SIMULACIÓN OPERATIVA</span><span class="admin-lighttag">CORTE · 18 NOV 2026</span></div>
+   <div class="admin-panel-focus"><div class="admin-panel-code">EXPEDIENTE / OP-001</div><h2>Lo urgente no siempre es lo que está listo para ejecutar.</h2><p>El control empieza cuando podemos distinguir una solicitud completa de una que necesita respaldo, responsable o autorización.</p></div>
+   <div class="admin-panel-facts">
+    <div><span>ENTRADAS</span><strong id="intro-total">—</strong><small>solicitudes distintas</small></div>
+    <div><span>POR REVISAR</span><strong id="intro-review">—</strong><small>con al menos un control activado</small></div>
+    <div><span>ACCIONES AUTOMÁTICAS</span><strong>0</strong><small>sin cambios en terceros</small></div>
+   </div>
+   <div class="admin-panel-bottom"><span>FUENTES → REGLAS → EXCEPCIONES → DECISIÓN</span><span>DEMOSTRACIÓN AUDITABLE</span></div>
+  </div>
+ </div>
+</section>
+<div class="admin-credbar"><div class="shell"><span>01 · UNA ENTRADA IDENTIFICABLE</span><span>02 · UN RESPONSABLE CONFIRMADO</span><span>03 · UNA DECISIÓN AUTORIZADA</span><span>04 · UN RESULTADO REVISABLE</span></div></div>
+<section class="admin-strategy" id="metodo-caso" aria-labelledby="strategy-title">
+ <div class="shell">
+  <div class="admin-section-heading"><div><p class="admin-eyebrow">ANTES DE HABLAR DE AUTOMATIZACIÓN</p><h2 id="strategy-title">Una intervención no empieza con un tablero. <em>Empieza con el criterio.</em></h2></div><p>Un tablero puede mostrar treinta tareas y aun así ocultar el riesgo principal. Por eso examinamos entradas, dependencias y autoridad de decisión antes de proponer una forma de ejecutar.</p></div>
+  <div class="admin-strategy-grid">
+   <article class="admin-step"><div class="admin-step-n">01 <span>ENTENDER</span></div><h3>¿Qué necesita avanzar realmente?</h3><p>Identificamos el objetivo del negocio, las solicitudes que lo bloquean y las consecuencias de resolverlas incorrectamente.</p><small>Salida: mapa de entradas, actores, objetivo y restricciones.</small></article>
+   <article class="admin-step"><div class="admin-step-n">02 <span>ESTRUCTURAR</span></div><h3>¿Qué información merece confianza?</h3><p>Asignamos folios, contrastamos referencias, registramos vacíos y distinguimos quién puede autorizar cada cambio.</p><small>Salida: registro, controles y cola de excepciones.</small></article>
+   <article class="admin-step"><div class="admin-step-n">03 <span>CONTROLAR</span></div><h3>¿Qué puede ejecutarse sin adivinar?</h3><p>Las decisiones ambiguas se detienen; los avances se vinculan a responsables, evidencias y criterios de cierre.</p><small>Salida: prioridades y decisiones verificables.</small></article>
+   <article class="admin-step"><div class="admin-step-n">04 <span>MEJORAR</span></div><h3>¿Qué conviene repetir de otra manera?</h3><p>Tras medir tiempos, calidad y retrabajo, proponemos cambios. No declaramos mejoras antes de verificarlas.</p><small>Salida: hipótesis, ensayo y comparación con línea base.</small></article>
+  </div>
+  <div class="admin-principle"><span class="admin-principle-mark">↳</span><p><strong>Lo que compra el cliente:</strong> claridad sobre lo que ocurre, quién responde, qué requiere decisión y qué trabajo puede delegarse. <span>El método se adapta al encargo; no reemplaza el criterio del responsable.</span></p></div>
+ </div>
+</section>
+<section class="admin-workbench" id="mesa" aria-labelledby="workbench-title">
+ <div class="shell">
+  <div class="admin-section-heading admin-bench-head"><div><p class="admin-eyebrow">DE LA TEORÍA AL EXPEDIENTE</p><h2 id="workbench-title">Explora una operación. <em>Inspecciona cada decisión.</em></h2></div><p>No es un dashboard conectado a una empresa. Es un laboratorio sin efectos externos: puedes filtrar 32 solicitudes ficticias, ver qué reglas se activaron y contrastar el registro original con la clasificación propuesta.</p></div>
+  <div class="admin-metric-row" aria-label="Métricas calculadas del expediente">
+    <div class="admin-metric"><span>SOLICITUDES DEL LOTE</span><strong id="metric-total">—</strong><small>folios rastreables</small></div>
+    <div class="admin-metric"><span>CON EXCEPCIONES</span><strong id="metric-review">—</strong><small>una o varias reglas activadas</small></div>
+    <div class="admin-metric"><span>SIN RESPONSABLE</span><strong id="metric-owner">—</strong><small>no se asigna uno por suposición</small></div>
+    <div class="admin-metric"><span>VENCIDAS AL CORTE</span><strong id="metric-due">—</strong><small>fecha límite ≤ 18 nov.</small></div>
+  </div>
+  <div class="admin-workspace">
+   <div class="admin-workspace-head"><div><p>COLA DE CONTROL <span>/</span> EXPEDIENTE SIMULADO</p><h3>Selecciona una solicitud</h3></div><span class="admin-no-write"><i aria-hidden="true"></i> SOLO LECTURA · SIN ACCESO A SISTEMAS</span></div>
+   <div class="admin-workspace-tools"><div class="admin-tab-list" role="group" aria-label="Filtrar por estado"><button class="admin-tab" data-filter="todos" aria-pressed="true" type="button">Todas <span id="count-todos">—</span></button><button class="admin-tab" data-filter="revision" aria-pressed="false" type="button">Por revisar <span id="count-revision">—</span></button><button class="admin-tab" data-filter="listos" aria-pressed="false" type="button">Sin alertas <span id="count-listos">—</span></button></div><label class="admin-search">Buscar por área, folio o asunto <input id="buscar" type="search" placeholder="Ej. compra, FIN-088, devolución" autocomplete="off"></label><label class="admin-area">Área <select id="area"><option value="todas">Todas las áreas</option><option>Compras</option><option>Ecommerce</option><option>Finanzas</option><option>Postventa</option><option>Operaciones</option></select></label></div>
+   <div class="admin-rule-rail" id="rule-rail" aria-label="Mostrar solicitudes que activan un control"></div>
+   <div class="admin-workspace-columns">
+    <div class="admin-queue"><div class="admin-queue-title"><span>ENTRADAS CLASIFICADAS</span><span id="shown-count" aria-live="polite">—</span></div><div class="admin-ticket-list" id="ticket-list" aria-label="Solicitudes disponibles"></div></div>
+    <div class="admin-inspector" id="inspector" aria-live="polite"><div class="admin-inspector-empty">Selecciona una solicitud para examinar su procedencia, los controles aplicados y la siguiente decisión.</div></div>
+   </div>
+   <div class="admin-workspace-footer"><p><strong>Interpretación:</strong> «sin alertas» significa que ninguna de estas seis reglas se activó, <em>no</em> que la solicitud esté aprobada ni ejecutada.</p><button class="admin-reset" type="button" id="reset-view">Reiniciar vista ↺</button></div>
+  </div>
+ </div>
+</section>
+<section class="admin-exercise" aria-labelledby="exercise-title">
+ <div class="shell admin-exercise-grid">
+ <div><p class="admin-eyebrow">DECISIÓN BAJO INCERTIDUMBRE</p><h2 id="exercise-title">No todo problema requiere hacer más. <em>A veces el valor está en no ejecutar todavía.</em></h2><p>Un pedido aparece con disponibilidad distinta en proveedor y canal. Hay presión por entregarlo. ¿Qué harías antes de confirmar al cliente o modificar el stock?</p><div class="admin-exercise-nav"><span>ESCENARIO · SOL-008</span><a href="#mesa" id="inspect-eight">Inspeccionar la solicitud ↗</a></div></div>
+ <div class="admin-exercise-box"><span class="admin-box-label">UNA DECISIÓN · TRES CONSECUENCIAS</span><div class="admin-choices" role="group" aria-label="Elegir criterio para la solicitud SOL-008"><button data-choice="a" type="button"><b>A</b><span>Actualizar el inventario con el último valor recibido y cerrar el caso.</span></button><button data-choice="b" type="button"><b>B</b><span>Detener el cambio, verificar qué fuente gobierna y solicitar autorización.</span></button><button data-choice="c" type="button"><b>C</b><span>Cancelar todos los pedidos relacionados para eliminar el riesgo.</span></button></div><p class="admin-choice-result" id="choice-result" aria-live="polite">Elige una opción para ver qué control aplicaríamos. Nada se modifica.</p></div>
+ </div>
+</section>
+<section class="admin-evidence" id="evidencia-caso" aria-labelledby="evidence-case-title">
+ <div class="shell">
+  <div class="admin-section-heading"><div><p class="admin-eyebrow">EVIDENCIA Y LIMITACIONES</p><h2 id="evidence-case-title">No te pedimos creer en una cifra. <em>Puedes revisar de dónde sale.</em></h2></div><p>Los conteos se calculan de una sola tabla fuente, mediante reglas declaradas. Puedes examinar los datos y repetir el cotejo. Son pruebas del comportamiento del prototipo, no resultados de operaciones contratadas.</p></div>
+  <div class="admin-evidence-columns"><div class="admin-evidence-card"><span>UNIDADES Y CONTROL</span><h3>32 solicitudes. Seis reglas explícitas.</h3><p>Una solicitud puede activar varias reglas. Por eso el número de alertas no equivale al número de solicitudes pendientes. Las referencias repetidas nunca se fusionan automáticamente.</p><div class="admin-evidence-figures"><div><strong id="evidence-alerts">—</strong><small>activaciones de reglas</small></div><div><strong id="evidence-duplicate">—</strong><small>solicitudes con referencia duplicada</small></div></div></div><div class="admin-evidence-card"><span>CONTROL DE RESULTADOS</span><h3>La mejora todavía necesita una prueba de campo.</h3><p>Este ejercicio no mide cuánto tarda una persona, si el equipo adopta el procedimiento ni si un cliente gana dinero. Para demostrarlo habría que comparar ciclos reales autorizados, tiempos, re-trabajo y resultados aceptados.</p><div class="admin-evidence-figures"><div><strong>—</strong><small>ahorro de tiempo validado</small></div><div><strong>0</strong><small>operaciones de clientes ejecutadas</small></div></div></div></div>
+  <div class="admin-data-actions"><div><strong>Materiales inspeccionables del caso</strong><p>Archivos de demostración. No contienen datos reales ni son necesarios para utilizar esta página.</p></div><details><summary>Ver archivos técnicos disponibles <span aria-hidden="true">+</span></summary><nav aria-label="Archivos técnicos"><a href="data/solicitudes_sinteticas.csv">Tabla de entrada · CSV</a><a href="data/reglas_y_limites.json">Reglas y limitaciones · JSON</a><a href="data/salida_evaluada.json">Clasificación íntegra · JSON</a><a href="data/CRITERIOS_Y_PRUEBAS.md">Criterios y pruebas · texto</a></nav></details></div>
+ </div>
+</section>
+<section class="admin-conversion" aria-labelledby="conversion-title"><div class="shell admin-conversion-inner"><div><p class="admin-eyebrow">EL SIGUIENTE PASO NO ES CONTRATAR UN SOFTWARE</p><h2 id="conversion-title">Una operación distinta exige un diagnóstico distinto.</h2><p>Si tienes solicitudes que se pierden, pendientes que nadie puede cerrar o procesos que requieren demasiada supervisión, podemos evaluar una intervención acotada. Antes de acordar una entrega definimos entradas, autoridad, privacidad, aceptación y condiciones.</p><p class="admin-reality">El análisis previo no implica una auditoría gratuita ilimitada ni acceso automático a tus cuentas. ORDENAL es una identidad de trabajo provisional y los servicios los presta un profesional independiente.</p></div><div class="admin-conversion-cta"><a class="admin-action admin-action-primary" href="consulta.html?area=operaciones">Cuéntanos qué está frenando tu operación ↗</a><a href="index.html">Explorar los demás frentes de trabajo</a></div></div></section>
+</main>
+<footer class="admin-footer"><div class="shell"><span>ORDENAL · ESTUDIO DE CASO ADMINISTRATIVO</span><span>Datos sintéticos · Sin efectos externos · Revisión previa a publicación</span><a href="index.html">Volver al sitio ↗</a></div></footer>
+<script>(()=>{'use strict';const c=new URLSearchParams(location.search).get('caso');const ok=['admin','operations','multi','migration','recon','sourcing','growth','qa'];const a=document.getElementById('context-return');if(ok.includes(c)){a.href=a.dataset.home+'#caso='+c;document.querySelectorAll('a[href$="consulta.html"]').forEach(link=>{link.href=link.getAttribute('href').split('consulta.html')[0]+'consulta.html?caso='+c;});}})();</script><script>window.addEventListener("load",()=>{const m=document.getElementById("metric-total");if(m&&m.textContent.trim()==="32")document.getElementById("op-load-state").hidden=true;});</script><script defer src="assets/contexto-r2.js"></script></body></html>

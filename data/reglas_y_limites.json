@@ -1,0 +1,50 @@
+{
+  "fecha_corte": "2026-11-18",
+  "tipo": "SIMULACION_100_POR_CIENTO_SINTETICA",
+  "unidades": "Una fila = una solicitud; cada solicitud puede activar varias reglas",
+  "reglas": [
+    {
+      "code": "SIN_RESPONSABLE",
+      "label": "Responsable sin confirmar",
+      "rule": "Si la solicitud no trae responsable nominal o rol designado, no suponer quién ejecuta.",
+      "control": "Asignación validada por dueño del proceso"
+    },
+    {
+      "code": "SIN_SOPORTE",
+      "label": "Falta evidencia de origen",
+      "rule": "Si no hay soporte o referencia autorizada, separar el caso de ejecuciones con efectos.",
+      "control": "Solicitar la fuente y registrar versión/fecha"
+    },
+    {
+      "code": "FECHA_VENCIDA",
+      "label": "Fecha comprometida vencida",
+      "rule": "Si fecha_límite ≤ 2026-11-18 y el estado no es cerrado, marcar retraso al corte.",
+      "control": "Escalar y confirmar nuevo compromiso sin inventarlo"
+    },
+    {
+      "code": "REFERENCIA_DUPLICADA",
+      "label": "Referencia que se repite",
+      "rule": "Si la misma referencia aparece en distintas solicitudes, exigir revisión de identidad antes de fusionarlas.",
+      "control": "Cotejar objeto, fecha, origen y dueño de decisión"
+    },
+    {
+      "code": "DEPENDENCIA_ABIERTA",
+      "label": "Depende de otra solicitud",
+      "rule": "La existencia de una dependencia no acredita que esté resuelta; bloquear acciones dependientes hasta confirmarla.",
+      "control": "Verificar que la dependencia esté cerrada y autorizada"
+    },
+    {
+      "code": "AUTORIZACION",
+      "label": "Requiere autorización del titular",
+      "rule": "Cambios de precio, dinero, publicación, devolución o política requieren aprobación explícita.",
+      "control": "Solicitar decisión y conservar quién y qué aprobó"
+    }
+  ],
+  "criterio_riesgo_orientativo": {
+    "alto": "Falta soporte, referencia repetida o vencimiento al corte",
+    "medio": "Uno o más controles restantes, sin los tres anteriores",
+    "bajo": "Ninguno de los seis controles activados"
+  },
+  "estados": "La clasificación no implica que una tarea haya sido ejecutada",
+  "version": "1.0"
+}

@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html lang="es-MX">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#15291f" name="theme-color"/>
+<meta content="ORDENAL. Investigación comercial, operaciones, ecommerce y control de datos. Intervenciones delimitadas, evidencia verificable y decisiones bajo tu control." name="description"/>
+<meta content="noindex,nofollow" name="robots"/>
+<title>ORDENAL — Inteligencia y ejecución operativa</title>
+<style>
+:root {
+  --paper:#f8f8f4;--white:#ffffff;--ink:#172820;--muted:#526158;--line:#dce4dc;
+  --dark:#142b21;--dark2:#1d3b2d;--green:#196347;--mist:#e9f0e7;--sage:#c6d8c6;
+  --orange:#bd7855;--pale:#f3ebdf;--focus:#aa582f;--max:1200px;
+}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:94px}
+body{margin:0;min-width:280px;background:var(--paper);color:var(--ink);font:16px/1.6 'Segoe UI Variable Text','Segoe UI',Aptos,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}button{font:inherit;cursor:pointer}p,h1,h2,h3{overflow-wrap:break-word}
+a:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid var(--focus);outline-offset:4px}
+::selection{background:#d7e8d4;color:#172820}
+.container{width:min(var(--max),calc(100% - 72px));margin-inline:auto}
+.skip-link{position:absolute;z-index:99;top:-90px;left:14px;padding:11px 17px;background:white;color:var(--ink)}.skip-link:focus{top:12px}
+header{position:sticky;top:0;z-index:40;background:rgba(248,248,244,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(16px)}
+.head-inner{min-height:77px;display:flex;justify-content:space-between;align-items:center;gap:26px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none;flex-shrink:0}
+.logo{position:relative;display:grid;place-items:center;width:40px;height:40px;background:var(--dark);border-radius:2px}
+.logo::before{content:"";width:21px;height:21px;border:1.6px solid #e9f4e9;border-radius:50%}
+.logo::after{content:"";position:absolute;left:19px;top:9px;height:22px;border-left:1px solid #89c7a7}
+.logo i{position:absolute;height:2px;width:22px;background:#89c7a7;top:19px;left:9px}
+.brand-word{display:flex;flex-direction:column;line-height:1.15;gap:3px}.brand-word b{font-size:16px;letter-spacing:.055em;font-weight:800}.brand-word small{font-size:9px;color:#53675a;letter-spacing:.09em;font-weight:680}
+.desktop-nav{display:flex;gap:29px;align-items:center;margin-left:auto}.desktop-nav a{font-size:13px;font-weight:700;text-decoration:none}.desktop-nav a:hover{text-decoration:underline;text-underline-offset:7px}
+.head-contact,.action-primary,.action-outline{display:inline-flex;align-items:center;justify-content:center;gap:22px;min-height:48px;padding:12px 18px;text-decoration:none;font-size:13px;font-weight:760;transition:transform .18s,background-color .18s,border-color .18s}
+.head-contact,.action-primary{background:var(--dark);color:white;border:1px solid var(--dark)}.head-contact:hover,.action-primary:hover{background:var(--green);border-color:var(--green);transform:translateY(-1px)}
+.action-outline{border:1px solid #9bad9f;color:var(--ink);background:transparent}.action-outline:hover{background:#ecf1e9}
+.mobile-nav{display:none}.mobile-nav>summary{cursor:pointer;list-style:none}.mobile-nav>summary::-webkit-details-marker{display:none}
+.mobile-nav nav{position:absolute;right:18px;top:68px;min-width:230px;background:white;border:1px solid var(--line);box-shadow:0 18px 42px rgba(19,39,28,.16);padding:8px;z-index:44}
+.mobile-nav nav a{display:block;font-weight:700;font-size:14px;text-decoration:none;padding:12px;border-bottom:1px solid #edf0ea}.mobile-nav nav a:last-child{border:0}
+/* hero */
+.hero{position:relative;isolation:isolate;overflow:hidden;border-bottom:1px solid var(--line);padding:72px 0 80px}
+.hero::before{content:"";position:absolute;top:0;right:0;width:42%;height:100%;background:linear-gradient(90deg,transparent,rgba(218,227,214,.26));z-index:-1}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.07fr) minmax(0,.93fr);gap:clamp(38px,5.5vw,85px);align-items:center}
+.eyebrow,.section-index{display:inline-flex;gap:10px;align-items:center;font-size:11px;letter-spacing:.13em;text-transform:uppercase;font-weight:850;color:var(--green)}
+.eyebrow::before{content:"";width:23px;height:2px;background:var(--orange)}
+h1{font-size:clamp(49px,5.5vw,78px);letter-spacing:-.083em;line-height:1.045;max-width:720px;font-weight:800;margin:23px 0 23px}
+h1 em{font-style:normal;color:var(--green)}
+.hero-lead{font-size:clamp(16px,1.35vw,18px);color:#42564a;line-height:1.75;max-width:565px;margin:0 0 27px}
+.hero-cta{display:flex;gap:11px;flex-wrap:wrap}.hero-sub{font-size:12px;color:#647269;margin:21px 0 0;max-width:550px}
+.workflow-card{position:relative;background:var(--dark);color:#f4f7f0;box-shadow:18px 20px 0 #e0e9dc;border:1px solid #284838;overflow:hidden}
+.workflow-card::before{content:"";position:absolute;top:0;right:0;height:190px;width:270px;background:radial-gradient(circle at center,rgba(85,137,104,.20) 1px,transparent 1px);background-size:15px 15px;pointer-events:none}
+.workflow-top{position:relative;display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #3b5846;padding:17px 22px;font-size:10px;color:#c0d6c3;letter-spacing:.12em;font-weight:800}
+.workflow-top .live-tag{color:#f2cfae}.workflow-body{position:relative;padding:29px 30px 30px}.workflow-intro{color:#9ac6ae;font-size:11px;letter-spacing:.12em;font-weight:760}
+.workflow-body h2{font-size:clamp(30px,3vw,42px);line-height:1.12;letter-spacing:-.057em;max-width:415px;margin:9px 0 24px;font-weight:750}
+.workflow-rows{border-top:1px solid #3b5948}.workflow-row{padding:16px 0;display:grid;grid-template-columns:28px 1fr 21px;gap:12px;align-items:start;border-bottom:1px solid #3b5948}
+.workflow-row:last-child{border-bottom:0}.workflow-row>span:first-child{font:700 11px/1.4 'Segoe UI',sans-serif;color:#97baa2}.workflow-row strong{font-size:14px;font-weight:730}.workflow-row p{margin:2px 0 0;font-size:12px;line-height:1.55;color:#bfd1c3}.workflow-row b{font-size:18px;font-weight:450;color:#8cc3a7}
+.workflow-foot{padding:15px 22px;display:flex;justify-content:space-between;gap:12px;background:#244333;font-weight:740;font-size:10px;letter-spacing:.07em;color:#dce9dc}
+.workflow-foot span:last-child{color:#f6c69c}
+/* assurances */
+.assurances{background:#ecf1e9;border-bottom:1px solid var(--line)}.assurances-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;min-height:70px;align-items:center}
+.assurances-grid span{display:flex;align-items:center;gap:12px;font-size:12px;font-weight:700;color:#405649}.assurances-grid span::before{content:"";flex:none;width:6px;height:6px;background:var(--green);border-radius:50%}
+/* sections */
+.section{padding:89px 0}.section-heading{display:flex;align-items:end;justify-content:space-between;gap:34px;margin-bottom:34px}
+.section-heading h2,.evidence-intro h2,.method-intro h2,.closing h2{font-size:clamp(36px,3.9vw,53px);letter-spacing:-.07em;line-height:1.12;font-weight:770;margin:9px 0 0}
+.section-heading h2{max-width:730px}.section-aside{max-width:348px;font-size:14px;line-height:1.7;color:var(--muted);margin:0}
+/* selector */
+.selector{display:grid;grid-template-columns:34% 1fr;background:white;border:1px solid #d6dfd7;min-height:390px}
+.selector-tabs{border-right:1px solid var(--line);display:flex;flex-direction:column}
+.selector-tab{border:0;border-bottom:1px solid var(--line);background:white;color:var(--ink);display:flex;align-items:center;gap:15px;padding:18px 19px;min-height:76px;text-align:left;flex:1;transition:background-color .12s;position:relative}
+.selector-tab:hover{background:#f1f5ef}.selector-tab[aria-selected="true"]{background:#e6efe5;box-shadow:inset 4px 0 var(--green)}
+.selector-tab:last-child{border-bottom:0}.selector-tab .number{font-weight:760;color:#328063;font-size:11px}.selector-tab strong{display:block;font-size:15px;line-height:1.3;font-weight:760}.selector-tab small{display:block;margin-top:2px;font-size:12px;color:#647369;line-height:1.35}
+.selector-panel{padding:32px 38px;display:flex;flex-direction:column;justify-content:center;gap:17px}
+.panel-kicker{font-size:10px;font-weight:800;letter-spacing:.12em;color:var(--green)}
+.selector-panel h3{font-size:clamp(27px,2.9vw,39px);letter-spacing:-.06em;line-height:1.19;font-weight:750;max-width:610px;margin:0}
+.selector-panel .panel-lead{color:#42564a;font-size:15px;line-height:1.65;max-width:620px;margin:0}
+.panel-facts{display:grid;grid-template-columns:1fr 1fr;gap:20px;border-top:1px solid var(--line);padding-top:16px}
+.panel-facts strong{font-size:11px;letter-spacing:.045em;color:var(--green)}.panel-facts p{font-size:13px;line-height:1.6;color:#516157;margin:5px 0 0}
+.panel-footer{display:flex;align-items:center;justify-content:space-between;gap:18px}.panel-footer a{display:inline-block;color:var(--green);font-size:13px;font-weight:760;text-underline-offset:5px}
+.panel-footer small{font-size:11px;color:#5e6e62;max-width:240px;line-height:1.45}
+/* proof */
+.proof{background:var(--dark);color:white;position:relative;overflow:hidden}.proof::before{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 25%,rgba(177,207,170,.045) 25.1%,transparent 26%),radial-gradient(circle at 12% 12%,rgba(132,175,146,.1),transparent 37%);pointer-events:none}
+.proof-layout{position:relative;display:grid;grid-template-columns:40% 1fr;gap:57px;align-items:start}
+.proof .section-index{color:#afcdb2}.proof .section-index::before{content:"";height:2px;width:20px;background:var(--orange)}
+.evidence-intro h2{margin:18px 0 24px;max-width:470px}.evidence-intro h2 em{font-style:normal;color:#a9c8af}
+.evidence-intro>p{color:#d1dfd1;font-size:15px;line-height:1.76;max-width:425px;margin:0 0 25px}
+.evidence-note{border-left:2px solid var(--orange);padding:11px 14px;background:rgba(255,255,255,.065);color:#e4e9df;font-size:12px;line-height:1.65;max-width:430px}
+.evidence-note strong{color:white}
+.case-card{background:#fff;color:var(--ink);box-shadow:0 24px 44px rgba(0,0,0,.13)}
+.case-top{display:flex;justify-content:space-between;gap:16px;background:#e8eee7;padding:15px 22px;font-size:10px;letter-spacing:.1em;font-weight:800;color:#3c6048}
+.case-top span:last-child{color:#78452d}.case-tabs{display:flex;overflow-x:auto;border-bottom:1px solid var(--line)}
+.case-tab{flex:1 0 auto;border:0;border-right:1px solid var(--line);background:#fff;color:#52655a;padding:15px 14px;font-size:12px;font-weight:760;white-space:nowrap}
+.case-tab[aria-selected="true"]{background:#eff4eb;color:var(--green);box-shadow:inset 0 -3px var(--green)}.case-tab:hover{background:#f5f7f2}
+.case-body{padding:25px 26px 24px;min-height:315px}.case-micro{font-weight:790;color:var(--green);font-size:10px;letter-spacing:.13em;margin:0 0 7px}.case-body h3{font-weight:760;font-size:clamp(24px,2.35vw,32px);letter-spacing:-.048em;line-height:1.14;margin:0 0 20px}
+.case-comparison{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:0 0 16px}.case-comparison div{background:#f8faf6;border:1px solid #dfe7db;padding:15px;min-width:0}.case-comparison span{display:block;color:#68766d;font-size:11px;line-height:1.4}.case-comparison strong{display:block;font-size:clamp(19px,2.15vw,27px);font-weight:780;letter-spacing:-.045em;margin-top:7px}
+.case-action{padding:14px 16px;background:#eef4eb;border-left:3px solid var(--green)}.case-action strong{font-size:13px;color:#24513a}.case-action p{font-size:13px;color:#435a4b;margin:4px 0 0;line-height:1.55}
+.case-more{padding:17px 24px 23px;border-top:1px solid var(--line)}.case-more a{font-size:13px;text-underline-offset:5px;font-weight:790;color:var(--green)}
+/* method */
+.method{background:#fff}.method-grid{display:grid;grid-template-columns:40% 1fr;gap:60px;align-items:start}
+.method-intro h2{margin:13px 0 18px}.method-intro p{margin:0;color:#526158;line-height:1.7;font-size:15px;max-width:460px}
+.method-list{border-top:2px solid var(--ink)}.method-row{display:grid;grid-template-columns:40px 1fr;gap:15px;border-bottom:1px solid var(--line);padding:19px 0}
+.method-row .step{color:var(--green);font-size:12px;font-weight:850}.method-row strong{display:block;font-size:18px;letter-spacing:-.03em}.method-row p{color:#617168;margin:3px 0 0;font-size:13px}
+.method-details{margin-top:24px;border:1px solid #dce5db;background:#f7f9f5}.method-details summary{list-style:none;cursor:pointer;padding:15px 19px;font-weight:740;font-size:13px;display:flex;align-items:center;justify-content:space-between;gap:16px}.method-details summary::-webkit-details-marker{display:none}.method-details summary::after{content:"+";font-size:20px;font-weight:500}.method-details[open] summary::after{content:"−"}.method-details>div{border-top:1px solid var(--line);padding:0 19px 18px}.method-details p{font-size:13px;color:#526257;line-height:1.7}.method-details a{font-size:13px;color:var(--green);font-weight:700}
+/* closing */
+.closing{background:#e5eee4;border-top:1px solid #cadcca;padding:66px 0}.closing-grid{display:flex;align-items:center;justify-content:space-between;gap:34px}.closing h2{margin:12px 0 15px;max-width:760px}.closing p{max-width:620px;margin:0;color:#4c5e51;line-height:1.7;font-size:15px}.closing .action-primary{flex-shrink:0}.closing small{font-size:12px;color:#65766a;display:block;margin-top:12px}
+.footer{background:#142b21;color:#d0dfd3;padding:20px 0}.footer-grid{display:flex;align-items:center;justify-content:space-between;gap:20px}.footer span{font-size:11px;color:#c0cfbf}.footer a{font-size:12px;font-weight:700;text-decoration:underline;text-underline-offset:4px}
+@media(max-width:1020px){.desktop-nav{gap:15px}.hero-grid{gap:36px}.workflow-body{padding:26px 22px}.hero h1{font-size:clamp(43px,5.3vw,70px)}.section{padding:73px 0}.proof-layout,.method-grid{gap:37px}}
+@media(max-width:800px){.container{width:calc(100% - 44px)}.desktop-nav{display:none}.mobile-nav{display:block}.mobile-nav>summary{display:grid;place-items:center;width:40px;height:40px;border:1px solid #b9c8ba;font-size:21px;font-weight:450}.head-inner{gap:12px}.head-contact{margin-left:auto}.hero{padding:55px 0 64px}.hero-grid{grid-template-columns:1fr;gap:42px}.hero h1{font-size:clamp(48px,8.3vw,72px);max-width:690px}.hero-lead{max-width:650px}.workflow-card{max-width:680px;box-shadow:12px 14px 0 #e0e9dc}.section-heading{display:block}.section-heading h2{max-width:700px}.section-aside{margin-top:15px;max-width:650px}.proof-layout,.method-grid{grid-template-columns:1fr;gap:30px}.evidence-intro h2{max-width:750px}.evidence-intro>p,.evidence-note{max-width:650px}.closing-grid{align-items:flex-start;flex-direction:column;gap:22px}.assurances-grid{gap:15px}.assurances-grid span{font-size:11px}}
+@media(max-width:560px){.container{width:calc(100% - 36px)}.head-inner{min-height:74px;gap:8px}.logo{width:35px;height:35px}.logo::before{width:18px;height:18px}.logo::after{left:17px;top:8px;height:19px}.logo i{left:8px;top:17px;width:19px}.brand{gap:8px}.brand-word b{font-size:14px}.brand-word small{font-size:8px;letter-spacing:.04em}.head-contact{min-height:44px;padding:8px 11px;font-size:12px;gap:7px}.mobile-nav>summary{width:44px;height:44px;font-size:19px}.mobile-nav nav{top:68px}.hero{padding:42px 0 55px}.eyebrow{font-size:10px;letter-spacing:.08em}.hero h1{font-size:clamp(40px,10.7vw,59px);line-height:1.04;margin:19px 0 18px}.hero-lead{font-size:15px;line-height:1.7;margin-bottom:22px}.hero-cta{display:grid;grid-template-columns:1fr;gap:9px}.hero-cta a{justify-content:space-between;padding:13px 16px}.hero-sub{font-size:11px}.workflow-card{box-shadow:9px 11px 0 #e0e9dc}.workflow-top{padding:13px 15px;font-size:9px}.workflow-body{padding:22px 20px}.workflow-body h2{font-size:29px;margin:6px 0 15px}.workflow-row{padding:11px 0}.workflow-foot{padding:12px 16px;font-size:9px}.assurances{padding:15px 0}.assurances-grid{display:flex;flex-wrap:wrap;min-height:0;gap:9px 18px}.assurances-grid span{font-size:11px}.assurances-grid span::before{width:5px;height:5px}.section{padding:59px 0}.section-heading{margin-bottom:23px}.section-heading h2,.evidence-intro h2,.method-intro h2,.closing h2{font-size:clamp(32px,8vw,41px)}.section-aside{font-size:13px;margin-top:12px}.selector{display:block;min-height:0}.selector-tabs{flex-direction:row;overflow-x:auto;border-right:0;border-bottom:1px solid var(--line);scroll-snap-type:x proximity}.selector-tab{min-width:145px;min-height:66px;flex:none;padding:11px 13px;gap:8px;scroll-snap-align:start;border-right:1px solid var(--line);border-bottom:0}.selector-tab[aria-selected="true"]{box-shadow:inset 0 -3px var(--green)}.selector-tab strong{font-size:13px}.selector-tab small{font-size:10px}.selector-panel{padding:24px 20px;gap:13px}.selector-panel h3{font-size:clamp(25px,7vw,32px)}.selector-panel .panel-lead{font-size:14px}.panel-facts{gap:13px}.panel-facts strong{font-size:10px}.panel-facts p{font-size:12px}.panel-footer{display:block}.panel-footer small{display:block;margin-top:10px}.proof-layout{gap:23px}.evidence-intro h2{margin:12px 0 15px}.evidence-intro>p{font-size:14px;margin-bottom:16px}.case-top{font-size:9px;padding:12px 13px}.case-tab{font-size:11px;padding:13px 11px}.case-body{padding:19px 16px;min-height:290px}.case-body h3{font-size:26px;margin-bottom:14px}.case-comparison div{padding:13px}.case-comparison strong{font-size:21px}.case-action{padding:12px 13px}.case-more{padding:13px 15px 18px}.method-grid{gap:22px}.method-details{margin-top:19px}.closing{padding:52px 0}.closing .action-primary{align-self:stretch;justify-content:space-between}.footer-grid{align-items:flex-start;flex-direction:column;gap:8px}}
+@media(max-width:330px){.brand-word small{display:none}.brand-word b{font-size:13px}.head-contact{padding:8px 9px}.container{width:calc(100% - 30px)}.panel-facts{grid-template-columns:1fr}.case-comparison div{padding:10px}.case-comparison strong{font-size:19px}.workflow-foot{display:block}.workflow-foot span:last-child{display:block;margin-top:5px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+
+
+/* C3 · progressive evidence and scope, visual restraint */
+.proof-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:1px solid #3b5948;margin-top:14px;gap:0}
+.proof-stats>div{padding:14px 10px 11px 0;border-bottom:1px solid #3b5948;display:flex;flex-direction:column;gap:1px}
+.proof-stats strong{font-size:clamp(30px,3vw,45px);letter-spacing:-.06em;line-height:1.12;color:#f5f3e9}
+.proof-stats span{font-size:11px;color:#b9cfbd}
+.proof-hero-note{font-size:11px;color:#d1d8cb;line-height:1.55;margin:18px 0}
+.workflow-proof-link{color:#d6f0da;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:5px;font-weight:750;font-size:12px}
+.deep-detail{margin-top:3px;border-top:1px solid #d5e0d6;color:var(--ink);align-self:stretch}
+.deep-detail>summary{display:flex;gap:12px;justify-content:space-between;align-items:center;cursor:pointer;padding:12px 0 5px;color:#1b644b;font-weight:750;font-size:13px;min-height:45px;list-style:none}
+.deep-detail>summary::-webkit-details-marker,.depth-master>summary::-webkit-details-marker,.scenario-item>summary::-webkit-details-marker{display:none}
+.deep-detail .plus-glyph{border:1px solid #a8c5b2;border-radius:50%;width:24px;height:24px;display:grid;place-items:center;flex:none}
+.deep-detail[open] .plus-glyph{transform:rotate(45deg)}
+.deep-inner{padding:16px 0 12px;font-size:13px;color:#40594b;line-height:1.65}
+.deep-intro{font-size:16px;font-weight:750;color:var(--ink);letter-spacing:-.02em;margin-bottom:15px}
+.deep-columns{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.deep-columns h4{font-size:11px;letter-spacing:.08em;color:#26714f;margin:15px 0 6px;text-transform:uppercase}
+.deep-columns h4:first-child{margin-top:0}.deep-columns p{margin:0 0 9px}.deep-columns ol,.deep-columns ul{padding-left:18px;margin:4px 0 11px}.deep-columns li{margin:6px 0;line-height:1.5}
+.scenario-archive{margin-top:25px}
+.depth-master{border:1px solid #c9d5c9;background:#eaf0e8}
+.depth-master>summary{cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:22px;padding:22px 25px;list-style:none;min-height:72px}
+.depth-master>summary:hover{background:#e2ede1}.archive-title{font-size:clamp(15px,1.7vw,19px);font-weight:790;line-height:1.35}.archive-sub{color:#266245;font-size:12px;font-weight:690;display:flex;align-items:center;gap:8px;max-width:280px}
+.archive-sub b{font-size:22px;font-weight:450}.depth-master[open] .archive-sub b{transform:rotate(45deg)}
+.depth-content{border-top:1px solid #c6d5c6;padding:24px;background:#fff;color:#344a3b;font-size:13px}.depth-content>p{margin:0 0 20px;max-width:780px}
+.scenario-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.scenario-item{background:#f8faf6;border:1px solid #dce7db;min-width:0}
+.scenario-item>summary{display:grid;grid-template-columns:27px 1fr 18px;gap:13px;padding:16px;cursor:pointer;list-style:none;align-items:start;min-height:81px}
+.scenario-n{font-size:11px;color:#3c8565;font-weight:800}.scenario-item>summary strong{display:block;font-size:14px;color:#19372b}.scenario-item>summary small{display:block;margin-top:4px;color:#607163;font-size:12px;line-height:1.45}.scenario-caret{color:#377859}
+.scenario-expanded{padding:4px 16px 18px 56px;border-top:1px solid #dce7db}.scenario-expanded>div{margin-top:14px}
+.scenario-expanded span{font-size:10px;letter-spacing:.1em;color:#327b56;font-weight:800}.scenario-expanded p{font-size:12.5px;line-height:1.6;margin:3px 0 0;color:#4c6052}.scenario-decision strong{font-size:13px;color:#24392b}
+.archive-footer{display:flex;flex-wrap:wrap;gap:25px;padding-top:21px}.archive-footer a{font-weight:750;color:#256348;font-size:13px}
+.evidence-deep{position:relative;margin-top:32px}.depth-dark{background:#284738;color:white;border-color:#567562}.depth-dark>summary:hover{background:#345342}.depth-dark .archive-sub{color:#c4e1cc}.depth-dark .depth-content{background:#f4f7ef;color:#273b30;border-color:#719078}
+.evidence-files{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:20px}.evidence-files a{display:block;padding:14px;border:1px solid #c8d7ca;background:white;color:#175e41;text-decoration:none;font-weight:740}.evidence-files a:hover{text-decoration:underline}
+.proof-numbers{display:flex;gap:14px;flex-wrap:wrap;border-bottom:1px solid #d0dfd1;padding-bottom:17px;margin-bottom:17px}
+.proof-numbers div{display:flex;flex-direction:column;min-width:82px}.proof-numbers b{font-size:24px;line-height:1.2;color:#20583d}.proof-numbers span{font-size:10px;color:#52695a}
+.depth-dark .depth-content>p{max-width:820px;line-height:1.75}.nested-record{border-top:1px solid #c8d9c9;padding-top:13px;margin-top:18px}.nested-record>summary{cursor:pointer;color:#1e6947;font-weight:750}.nested-record ol{columns:2;padding-left:21px;line-height:1.85}.small-footnote{font-size:11px;color:#5e6d5c;margin:15px 0 0}.case-proof{font-size:11px;color:#526a58;margin:12px 0 0}.history-link{color:#9cdbc3;display:inline-block;margin-left:7px;text-decoration:underline}
+@media(max-width:800px){.deep-columns,.scenario-grid{grid-template-columns:1fr}.archive-sub{display:block}.depth-master>summary{align-items:start}.evidence-files{grid-template-columns:1fr}}
+@media(max-width:540px){.depth-master>summary{padding:16px;display:block}.archive-sub{display:flex;margin-top:6px}.depth-content{padding:15px}.scenario-expanded{padding-left:16px}.proof-numbers{gap:9px}.proof-numbers div{min-width:74px}}
+@media(prefers-reduced-motion:reduce){.deep-detail .plus-glyph{transition:none}}
+
+
+/* Interactive, offline-only mini validation lab, separate from production engine */
+.mini-lab{margin-top:32px;border:1px solid #456854;background:#173326;color:#eaf2ea;display:grid;grid-template-columns:1fr 1fr;gap:0}
+.lab-left,.lab-right{padding:29px;min-width:0}.lab-left{border-right:1px solid #456854}.lab-right{background:#1f3e2d}
+.lab-eyebrow{display:block;font-size:10px;letter-spacing:.14em;font-weight:850;color:#b2d0b9;margin-bottom:8px}.lab-left h3{font-size:clamp(24px,2.5vw,35px);line-height:1.17;letter-spacing:-.055em;margin:0 0 11px}
+.lab-lead{font-size:13px;line-height:1.65;color:#c9d9c9;margin:0 0 17px}
+.lab-left label{font-size:11px;font-weight:750;display:block;margin-bottom:9px;color:#ecf1e9}
+.lab-source{display:block;width:100%;height:168px;resize:vertical;min-height:145px;padding:13px;color:#f4f9f4;background:#122a1e;border:1px solid #8aa591;font:12px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre;overflow:auto;border-radius:0}
+.lab-source:focus-visible{outline:2px solid #e9b388;outline-offset:2px}
+.lab-controls{display:flex;flex-wrap:wrap;gap:10px;margin-top:13px}
+.lab-controls button{padding:11px 14px;border:1px solid #b8d1b7;color:#102c1c;background:#d4e7d0;font-size:12px;font-weight:800;min-height:44px}
+.lab-controls button:last-child{background:transparent;color:#e8f5e7;border-color:#7b9d82}
+.lab-hint{font-size:11px;color:#b9d2bf;margin:12px 0 0;line-height:1.5}
+.lab-summary{display:flex;gap:13px;flex-wrap:wrap;margin:0 0 18px}
+.lab-summary>div{flex:1;min-width:76px;border:1px solid #53765b;padding:10px}
+.lab-summary strong{display:block;font-size:26px;line-height:1.25;color:#f4fbef}.lab-summary span{font-size:10px;color:#c5d7c8}
+.lab-output{max-height:350px;overflow:auto;border:1px solid #53765b;background:#183526}
+.lab-result-table{width:100%;border-collapse:collapse;font-size:11px;min-width:365px}
+.lab-result-table th,.lab-result-table td{padding:10px 9px;text-align:left;border-bottom:1px solid #42674e;white-space:normal;vertical-align:top}
+.lab-result-table th{color:#ddf0d9;background:#214530;position:sticky;top:0;font-weight:800}
+.lab-result-table td{color:#e6f1e4;overflow-wrap:anywhere}
+.lab-pill{display:inline-block;font-size:9px;font-weight:850;letter-spacing:.035em;text-transform:uppercase;padding:3px 6px;border:1px solid #a6c0a8;color:#e4f6e4}
+.lab-pill.block{border-color:#e7ad8e;color:#f8cbb3}.lab-pill.fix{border-color:#85cdae;color:#bce9c7}
+.lab-status{font-size:12px;line-height:1.55;margin:0 0 10px;color:#ddf1d9}
+.lab-foot{font-size:11px;color:#c5d8ca;line-height:1.55;margin:12px 0 0}
+@media(max-width:850px){.mini-lab{grid-template-columns:1fr}.lab-left{border-right:0;border-bottom:1px solid #456854}}
+@media(max-width:520px){.lab-left,.lab-right{padding:18px}.lab-controls button{flex:1}.lab-summary>div{min-width:70px}}
+@media(max-width:580px){
+.lab-result-table{min-width:0;width:100%}.lab-result-table thead{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+.lab-result-table tbody,.lab-result-table tr{display:block}.lab-result-table tr{padding:9px 11px;border-bottom:1px solid #45634c}
+.lab-result-table td{border:0;display:inline-block;padding:4px;vertical-align:middle}.lab-result-table td:first-child{font-weight:800;min-width:67px}.lab-result-table td:nth-child(3){display:block;padding:8px 4px 5px;line-height:1.55}
+}
+
+
+</style>
+</head>
+<body>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
+<header>
+<div class="container head-inner">
+<a aria-label="ORDENAL, volver al inicio" class="brand" href="#inicio"><span aria-hidden="true" class="logo"><i></i></span><span class="brand-word"><b>ORDENAL</b><small>OPERACIONES · INTELIGENCIA</small></span></a>
+<nav aria-label="Navegación principal" class="desktop-nav"><a href="#necesidades">Qué abordamos</a><a href="#evidencia">Ver una prueba</a><a href="#metodo">Nuestro método</a></nav>
+<a class="head-contact" href="https://3duardoambrosio-bit.github.io/trendify-assets/revision-v47/consulta.html">Consultar <span aria-hidden="true">↗</span></a>
+<details class="mobile-nav"><summary aria-label="Abrir menú de navegación">☰</summary><nav aria-label="Navegación móvil"><a href="#necesidades">Qué abordamos</a><a href="#evidencia">Ver una prueba</a><a href="#metodo">Nuestro método</a><a href="#contacto">Contacto</a></nav></details>
+</div>
+</header>
+<main id="contenido">
+<section aria-labelledby="hero-title" class="hero" id="inicio">
+<div class="container hero-grid">
+<div>
+<span class="eyebrow">Investigación · Operaciones · Ecommerce · Datos</span>
+<h1 id="hero-title">Que un dato dudoso <em>no detenga tu operación.</em></h1>
+<p class="hero-lead">Cuando proveedores, archivos, decisiones y tareas no coinciden, alguien termina absorbiendo el riesgo. Investigamos las causas, resolvemos lo verificable y entregamos cambios, excepciones y siguientes decisiones con evidencia.</p>
+<div class="hero-cta"><a class="action-primary" href="#necesidades">Encontrar una solución <span aria-hidden="true">↗</span></a><a class="action-outline" href="#evidencia">Examinar una muestra <span aria-hidden="true">↓</span></a></div>
+<p class="hero-sub">Servicios independientes · Alcance por escrito · Cambios críticos bajo autorización.</p>
+</div>
+<div aria-label="Expediente de referencia con datos ficticios y resultados verificables del ejercicio" class="workflow-card">
+<div class="workflow-top"><span>EXPEDIENTE / MUESTRA DE CONTROL</span><span class="live-tag">DATOS SINTÉTICOS</span></div>
+<div class="workflow-body"><div class="workflow-intro">NO ES UNA PROMESA · PUEDES REVISAR LA FUENTE</div><h2>Lo que encontramos. <br/>Lo que cambiamos. <br/>Lo que no adivinamos.</h2>
+<div class="proof-stats"><div><strong>180</strong><span>registros examinados</span></div><div><strong>57</strong><span>incidencias documentadas</span></div><div><strong>10</strong><span>ajustes seguros</span></div><div><strong>47</strong><span>pendientes, sin inventar datos</span></div></div>
+<p class="proof-hero-note">Ejercicio sintético, verificador de referencia V4 independiente de SYNAPSE. No representa un cliente ni acredita importaciones en vivo.</p>
+<a class="workflow-proof-link" href="#evidencia">Inspeccionar las decisiones y archivos <span aria-hidden="true">↓</span></a>
+</div>
+<div class="workflow-foot"><span>ORIGINAL + REVISIÓN + BITÁCORA</span><span>PUBLICACIÓN NO VALIDADA</span></div>
+</div>
+</div>
+</section>
+<div class="assurances"><div class="container assurances-grid"><span>Alcance definido por encargo</span><span>Fuentes y cambios trazables</span><span>Decisiones críticas bajo autorización</span></div></div>
+<section aria-labelledby="needs-title" class="section" id="necesidades">
+<div class="container"><div class="section-heading"><div><span class="section-index">01 / EN QUÉ PODEMOS INTERVENIR</span><h2 id="needs-title">Diferentes problemas.<br/>Una forma de avanzar.</h2></div><p class="section-aside">No tienes que elegir una tecnología. Selecciona el tipo de trabajo que te está frenando y explora qué podríamos resolver.</p></div>
+<div class="selector">
+<div aria-label="Áreas de intervención" class="selector-tabs" data-tabgroup="" role="tablist">
+<button aria-controls="need-ops" aria-selected="true" class="selector-tab" id="need-tab-ops" role="tab" tabindex="0" type="button"><span class="number">01</span><span><strong>Operaciones</strong><small>Flujos, seguimiento, responsables</small></span></button>
+<button aria-controls="need-research" aria-selected="false" class="selector-tab" id="need-tab-research" role="tab" tabindex="-1" type="button"><span class="number">02</span><span><strong>Investigación</strong><small>Proveedores, mercados, decisiones</small></span></button>
+<button aria-controls="need-commerce" aria-selected="false" class="selector-tab" id="need-tab-commerce" role="tab" tabindex="-1" type="button"><span class="number">03</span><span><strong>Ecommerce</strong><small>Catálogos, archivos, canales</small></span></button>
+<button aria-controls="need-data" aria-selected="false" class="selector-tab" id="need-tab-data" role="tab" tabindex="-1" type="button"><span class="number">04</span><span><strong>Datos y QA</strong><small>Conciliación, errores, control</small></span></button>
+<button aria-controls="need-growth" aria-selected="false" class="selector-tab" id="need-tab-growth" role="tab" tabindex="-1" type="button"><span class="number">05</span><span><strong>Decisiones comerciales</strong><small>Ofertas, hipótesis, oportunidades</small></span></button>
+</div>
+<div aria-labelledby="need-tab-ops" class="selector-panel" id="need-ops" role="tabpanel"><span class="panel-kicker">OPERACIONES / INTERVENCIÓN POR EVALUAR</span><h3>Cuando todo depende de perseguir el siguiente pendiente.</h3><p class="panel-lead">Si las tareas viven entre mensajes, hojas y responsables distintos, resulta difícil saber qué avanzó y quién debe actuar.</p><div class="panel-facts"><div><strong>QUÉ REVISARÍAMOS</strong><p>Entradas, responsables, bloqueos, criterios de cierre y puntos de decisión.</p></div><div><strong>QUÉ PODRÍAS RECIBIR</strong><p>Procedimiento, seguimiento de tareas y registro de excepciones según alcance.</p></div></div><div class="panel-footer"><a href="https://3duardoambrosio-bit.github.io/trendify-assets/revision-v47/consulta.html?area=operaciones">Consultar una intervención ↗</a><small>No implica dirección de equipos ni acceso automático a herramientas.</small></div><details class="deep-detail"><summary><span>Ver intervención completa, resultados y condiciones</span><span aria-hidden="true" class="plus-glyph">+</span></summary><div class="deep-inner"><div class="deep-intro">Operación y continuidad: alcance desplegable</div><div class="deep-columns"><div><h4>Lo que suele fallar</h4><p>Solicitudes en chats y hojas sin responsable claro; fechas que cambian; tareas marcadas como completadas sin evidencia; bloqueos que nadie escala.</p><h4>Cómo se trabajaría</h4><ol><li>Inventariar entradas, canales, responsables, prioridades y dependencias.</li><li>Definir estados observables: recibido, en curso, bloqueado, pendiente de aprobación, entregado y aceptado.</li><li>Diseñar un SOP con rutas de excepción y criterios de cierre que el cliente pueda comprobar.</li><li>Ejecutar un piloto delimitado y medir tiempos, omisiones y retrabajo.</li></ol></div><div><h4>Qué quedaría entregado</h4><ul><li>Mapa de flujo y dependencias.</li><li>Tablero o matriz de estados con propietario y evidencia.</li><li>SOP operativo, alertas de bloqueo y criterios de revisión.</li></ul><h4>Ejemplo de decisión</h4><p>Una solicitud pasa por tres personas. Se reconstruye cuándo se recibió, quién la tomó, qué impidió terminarla y qué prueba cierra cada paso.</p><h4>Condiciones y límites</h4><p>Equipos pequeños con operaciones recurrentes y coordinaciones manuales. La implantación depende de que asignen autoridad y accesos; no se promete dirigir equipos.</p></div></div></div></details></div>
+<div aria-labelledby="need-tab-research" class="selector-panel" hidden="" id="need-research" role="tabpanel"><span class="panel-kicker">INVESTIGACIÓN / INTERVENCIÓN POR EVALUAR</span><h3>Elegir con datos contrastados, no con la primera respuesta.</h3><p class="panel-lead">Cuando comparar proveedores o alternativas requiere juntar documentos, condiciones, precios y fuentes distintas.</p><div class="panel-facts"><div><strong>QUÉ REVISARÍAMOS</strong><p>Objetivo, criterios, actualidad y trazabilidad de la información.</p></div><div><strong>QUÉ PODRÍAS RECIBIR</strong><p>Comparativa estructurada, fuentes, incertidumbres y recomendación acotada.</p></div></div><div class="panel-footer"><a href="https://3duardoambrosio-bit.github.io/trendify-assets/revision-v47/consulta.html?area=investigacion">Consultar una investigación ↗</a><small>No se inventan datos faltantes ni se certifican fuentes externas.</small></div><details class="deep-detail"><summary><span>Ver intervención completa, resultados y condiciones</span><span aria-hidden="true" class="plus-glyph">+</span></summary><div class="deep-inner"><div class="deep-intro">Investigación e inteligencia: fuentes, alternativas y decisión</div><div class="deep-columns"><div><h4>Lo que suele fallar</h4><p>Una decisión depende de condiciones que no se pueden comparar directamente: proveedores, costos totales, entregas, restricciones, fechas y fuentes contradictorias.</p><h4>Cómo se trabajaría</h4><ol><li>Especificar la decisión, no solo el tema de búsqueda.</li><li>Definir criterios de comparación, fuentes aceptables y corte de actualidad.</li><li>Construir una matriz estructurada con evidencia verificable y vacíos explícitos.</li><li>Contrastar escenarios, riesgos y condiciones que invalidarían una conclusión.</li></ol></div><div><h4>Qué quedaría entregado</h4><ul><li>Base de datos de fuentes y variables por alternativa.</li><li>Cuadro comparativo, incertidumbres y preguntas pendientes.</li><li>Recomendación condicionada, supuestos y evidencia para el responsable.</li></ul><h4>Ejemplo de decisión</h4><p>Tres proveedores cotizan precios distintos; el menor precio unitario pierde ventaja cuando se consideran mínimo, entrega y devoluciones.</p><h4>Condiciones y límites</h4><p>Compras, selección de proveedores, alternativas comerciales e investigación documental. No se certifican hechos sin verificarlos ni se sustituyen especialistas regulados.</p></div></div></div></details></div>
+<div aria-labelledby="need-tab-commerce" class="selector-panel" hidden="" id="need-commerce" role="tabpanel"><span class="panel-kicker">ECOMMERCE / INTERVENCIÓN POR EVALUAR</span><h3>Actualizar productos sin perder el control de la información.</h3><p class="panel-lead">Archivos de proveedor y tienda que no coinciden: precios, SKU, variantes o existencias pueden impedir cambios responsables.</p><div class="panel-facts"><div><strong>QUÉ REVISARÍAMOS</strong><p>Fuentes, identidades, campos, colisiones y reglas antes de actualizar.</p></div><div><strong>QUÉ PODRÍAS RECIBIR</strong><p>Matriz de diferencias, lista de bloqueos y propuesta de cambios revisable.</p></div></div><div class="panel-footer"><a href="https://3duardoambrosio-bit.github.io/trendify-assets/revision-v47/consulta.html?area=catalogos">Consultar un lote ↗</a><small>Sin publicar ni importar datos a una tienda sin pruebas y permisos.</small></div><details class="deep-detail"><summary><span>Ver intervención completa, resultados y condiciones</span><span aria-hidden="true" class="plus-glyph">+</span></summary><div class="deep-inner"><div class="deep-intro">Ecommerce: preparación, comparación y control previo</div><div class="deep-columns"><div><h4>Lo que suele fallar</h4><p>Un CSV de proveedor no coincide con el catálogo actual; IDs, variantes, stock, moneda o precios pueden cambiar la ficha equivocada o perder información.</p><h4>Cómo se trabajaría</h4><ol><li>Revisar esquemas, encoding, dimensiones, claves de producto y variante.</li><li>Resolver autoridad por campo: qué fuente gobierna cada dato y con qué fecha.</li><li>Detectar duplicados, conflictos, valores vacíos, formatos ambiguos y columnas incompatibles.</li><li>Generar vista previa de diferencias, excepciones y archivos de trabajo sin cargar a producción.</li></ol></div><div><h4>Qué quedaría entregado</h4><ul><li>Matriz origen → propuesta, con identidades preservadas.</li><li>Informe por referencia y campo con reglas aplicadas.</li><li>Archivo candidato, manifiesto de cambios y lista de aprobaciones.</li></ul><h4>Ejemplo de decisión</h4><p>Dos proveedores usan el mismo SKU para referencias distintas. Se detiene el cruce hasta decidir la identidad correcta, en vez de sobrescribir una ficha.</p><h4>Condiciones y límites</h4><p>Agencias o tiendas con lotes próximos a actualizar. Shopify/Matrixify solo en alcance adicional probado; no prometemos compatibilidad universal ni publicación automática.</p></div></div></div></details></div>
+<div aria-labelledby="need-tab-data" class="selector-panel" hidden="" id="need-data" role="tabpanel"><span class="panel-kicker">DATOS Y QA / INTERVENCIÓN POR EVALUAR</span><h3>Dos hojas pueden coincidir y seguir estando equivocadas.</h3><p class="panel-lead">Conciliar implica detectar discrepancias y preservar evidencia; no adivinar qué archivo tiene la verdad.</p><div class="panel-facts"><div><strong>QUÉ REVISARÍAMOS</strong><p>Esquemas, claves, duplicados, valores inconsistentes y reglas explícitas.</p></div><div><strong>QUÉ PODRÍAS RECIBIR</strong><p>Reporte por campo, excepciones y resultados verificables de la comparación.</p></div></div><div class="panel-footer"><a href="https://3duardoambrosio-bit.github.io/trendify-assets/revision-v47/consulta.html?area=datos">Consultar una conciliación ↗</a><small>La coincidencia entre fuentes no garantiza su exactitud externa.</small></div><details class="deep-detail"><summary><span>Ver intervención completa, resultados y condiciones</span><span aria-hidden="true" class="plus-glyph">+</span></summary><div class="deep-inner"><div class="deep-intro">Datos y QA: conciliación, validación y trazabilidad</div><div class="deep-columns"><div><h4>Lo que suele fallar</h4><p>Los totales no coinciden o coinciden con errores compartidos; claves repetidas generan asociaciones falsas y encabezados desplazados cambian el significado de columnas.</p><h4>Cómo se trabajaría</h4><ol><li>Congelar las entradas y definir campo, tipo, moneda, locale, autoridad y tolerancia.</li><li>Verificar esquemas, duplicados y cardinalidad antes de cotejar valores.</li><li>Conciliar en ambos sentidos: faltantes en A, faltantes en B, conflictos y ambigüedades.</li><li>Cotejar cambios autorizables y generar pruebas adversariales del resultado.</li></ol></div><div><h4>Qué quedaría entregado</h4><ul><li>Registro original preservado y reporte de discrepancias.</li><li>Bitácora de reglas, evidencia por fila y cuarentena de casos ambiguos.</li><li>Criterios de aceptación y resultados reproducibles en el alcance probado.</li></ul><h4>Ejemplo de decisión</h4><p>El mismo SKU se repite con dos precios. No gana la última fila: se marca colisión y se pide instrucción antes de concluir.</p><h4>Condiciones y límites</h4><p>Equipos que necesitan revisar información antes de autorizarla. El control A-20 corregido es candidato no instalado; cada servicio requiere prueba independiente.</p></div></div></div></details></div>
+<div aria-labelledby="need-tab-growth" class="selector-panel" hidden="" id="need-growth" role="tabpanel"><span class="panel-kicker">DECISIONES COMERCIALES / INTERVENCIÓN POR EVALUAR</span><h3>Antes de invertir, separar oportunidades de suposiciones.</h3><p class="panel-lead">Una nueva oferta, proveedor o canal necesita preguntas precisas y un experimento que pueda confirmar o descartar la hipótesis.</p><div class="panel-facts"><div><strong>QUÉ REVISARÍAMOS</strong><p>Demanda, alternativas, restricciones, costos y señales de decisión.</p></div><div><strong>QUÉ PODRÍAS RECIBIR</strong><p>Escenarios, criterios, riesgos y una validación comercial propuesta.</p></div></div><div class="panel-footer"><a href="https://3duardoambrosio-bit.github.io/trendify-assets/revision-v47/consulta.html?area=crecimiento">Consultar una oportunidad ↗</a><small>No se garantizan ventas, conversiones ni resultados de publicidad.</small></div><details class="deep-detail"><summary><span>Ver intervención completa, resultados y condiciones</span><span aria-hidden="true" class="plus-glyph">+</span></summary><div class="deep-inner"><div class="deep-intro">Decisiones comerciales: experimentos con señal real</div><div class="deep-columns"><div><h4>Lo que suele fallar</h4><p>Se quiere lanzar una oferta o canal sin distinguir demanda, intención de compra, costos y alternativas; se corre el riesgo de optimizar métricas de vanidad.</p><h4>Cómo se trabajaría</h4><ol><li>Definir comprador y problema que ya tiene consecuencias observables.</li><li>Identificar sustitutos existentes, costo de oportunidad y señales de necesidad actual.</li><li>Diseñar el experimento más barato que pueda refutar la hipótesis.</li><li>Registrar respuesta, objeción, precio ofrecido, compromiso y, cuando ocurra, pago efectivo.</li></ol></div><div><h4>Qué quedaría entregado</h4><ul><li>Mapa de hipótesis y compradores, fuentes y contradicciones.</li><li>Prueba de mercado pequeña con aceptación/rechazo medible.</li><li>Decisión continuar, ajustar o descartar con criterios predefinidos.</li></ul><h4>Ejemplo de decisión</h4><p>Una agencia podría necesitar QA de catálogos, pero revisar solo 20 filas quizá no compense su costo de coordinación. Se prueba antes de automatizar.</p><h4>Condiciones y límites</h4><p>Equipos o independientes que están validando servicios o proveedores. No se garantizan ventas ni retorno publicitario.</p></div></div></div></details></div>
+</div>
+<div class="scenario-archive"><details class="depth-master"><summary><span class="archive-title">¿Tu caso no encaja en una etiqueta? Explora ocho situaciones reales de operación.</span><span class="archive-sub">Abrir mapa de problemas, consecuencias y entregables <b aria-hidden="true">+</b></span></summary><div class="depth-content"><p>Estas son situaciones orientativas, no casos de clientes. Se conserva el recorrido profundo que existía en V4.7, ahora desplegable solo cuando lo necesitas.</p><div class="scenario-grid"><details class="scenario-item"><summary><span class="scenario-n">01</span><span><strong>Seguimiento operativo</strong><small>Tareas y responsables dispersos</small></span><span aria-hidden="true" class="scenario-caret">↘</span></summary><div class="scenario-expanded"><div><span>POR QUÉ IMPORTA</span><p>Si el estado real depende de preguntar a varias personas, no hay criterio de cierre común.</p></div><div><span>QUÉ SE ENTREGARÍA</span><p>SOP, cola de incidencias, dueños de tareas y pruebas de aceptación.</p></div><div class="scenario-decision"><span>LA PREGUNTA QUE DEFINE EL ALCANCE</span><strong>¿Qué evento verificable demuestra que la tarea terminó?</strong></div></div></details><details class="scenario-item"><summary><span class="scenario-n">02</span><span><strong>Catálogo multicanal</strong><small>Precios, variantes y stock incompatibles</small></span><span aria-hidden="true" class="scenario-caret">↘</span></summary><div class="scenario-expanded"><div><span>POR QUÉ IMPORTA</span><p>La fila parece correcta, pero identidad y autoridad por campo pueden no estar resueltas.</p></div><div><span>QUÉ SE ENTREGARÍA</span><p>Comparación por SKU/variante, reporte de colisiones y propuesta sin cargas en vivo.</p></div><div class="scenario-decision"><span>LA PREGUNTA QUE DEFINE EL ALCANCE</span><strong>¿Qué archivo es fuente de verdad para cada campo?</strong></div></div></details><details class="scenario-item"><summary><span class="scenario-n">03</span><span><strong>Migración o actualización</strong><small>Transformaciones que pierden información</small></span><span aria-hidden="true" class="scenario-caret">↘</span></summary><div class="scenario-expanded"><div><span>POR QUÉ IMPORTA</span><p>Importar sin error técnico no implica que variantes, URLs, etiquetas e IDs coincidan.</p></div><div><span>QUÉ SE ENTREGARÍA</span><p>Mapa de esquemas, conciliación bidireccional y casos bloqueantes.</p></div><div class="scenario-decision"><span>LA PREGUNTA QUE DEFINE EL ALCANCE</span><strong>¿Qué registros y atributos deben permanecer idénticos?</strong></div></div></details><details class="scenario-item"><summary><span class="scenario-n">04</span><span><strong>Reportes incompatibles</strong><small>Dos hojas, dos cifras</small></span><span aria-hidden="true" class="scenario-caret">↘</span></summary><div class="scenario-expanded"><div><span>POR QUÉ IMPORTA</span><p>Se mezclan fechas, monedas, unidades o poblaciones; el total agregado engaña.</p></div><div><span>QUÉ SE ENTREGARÍA</span><p>Matriz de diferencias, normalización explícita y revisión de supuestos.</p></div><div class="scenario-decision"><span>LA PREGUNTA QUE DEFINE EL ALCANCE</span><strong>¿Se están comparando las mismas unidades y el mismo período?</strong></div></div></details><details class="scenario-item"><summary><span class="scenario-n">05</span><span><strong>Selección de proveedores</strong><small>Precio visible, costo real oculto</small></span><span aria-hidden="true" class="scenario-caret">↘</span></summary><div class="scenario-expanded"><div><span>POR QUÉ IMPORTA</span><p>Un precio bajo puede esconder mínimos, riesgos logísticos, devoluciones o condiciones distintas.</p></div><div><span>QUÉ SE ENTREGARÍA</span><p>Cuadro comparativo con costos, incertidumbres y decisiones sujetas a fuente.</p></div><div class="scenario-decision"><span>LA PREGUNTA QUE DEFINE EL ALCANCE</span><strong>¿Qué criterio haría cambiar la recomendación?</strong></div></div></details><details class="scenario-item"><summary><span class="scenario-n">06</span><span><strong>Continuidad operativa</strong><small>El trabajo avanza, pero nadie ve el resultado</small></span><span aria-hidden="true" class="scenario-caret">↘</span></summary><div class="scenario-expanded"><div><span>POR QUÉ IMPORTA</span><p>Los estados se reportan de memoria y los bloqueos aparecen demasiado tarde.</p></div><div><span>QUÉ SE ENTREGARÍA</span><p>Flujo documentado, responsables, estados, handoffs y escalamiento.</p></div><div class="scenario-decision"><span>LA PREGUNTA QUE DEFINE EL ALCANCE</span><strong>¿Quién tiene la autoridad para aprobar cada transición?</strong></div></div></details><details class="scenario-item"><summary><span class="scenario-n">07</span><span><strong>Validación de oportunidades</strong><small>Una iniciativa sin experimento</small></span><span aria-hidden="true" class="scenario-caret">↘</span></summary><div class="scenario-expanded"><div><span>POR QUÉ IMPORTA</span><p>Las opiniones de mercado se confunden con intención real de comprar.</p></div><div><span>QUÉ SE ENTREGARÍA</span><p>Hipótesis, compradores, alternativa, microexperimento y señal de compromiso.</p></div><div class="scenario-decision"><span>LA PREGUNTA QUE DEFINE EL ALCANCE</span><strong>¿Qué dato nos haría abandonar la idea?</strong></div></div></details><details class="scenario-item"><summary><span class="scenario-n">08</span><span><strong>Aceptación y QA</strong><small>Se ve bien, pero no es prueba</small></span><span aria-hidden="true" class="scenario-caret">↘</span></summary><div class="scenario-expanded"><div><span>POR QUÉ IMPORTA</span><p>Una entrega puede pasar tests débiles y esconder una identidad equivocada o un dato inventado.</p></div><div><span>QUÉ SE ENTREGARÍA</span><p>Pruebas adversariales, resultado esperado/observado, excepciones y decisión de aceptación.</p></div><div class="scenario-decision"><span>LA PREGUNTA QUE DEFINE EL ALCANCE</span><strong>¿Qué caso incorrecto debe obligar a rechazar la entrega?</strong></div></div></details></div><div class="archive-footer"><a href="https://3duardoambrosio-bit.github.io/trendify-assets/revision-v47/#situaciones" rel="noopener noreferrer" target="_blank">Consultar también el archivo completo de V4.7 ↗</a><a href="#contacto">Plantear mi caso ↗</a></div></div></details></div>
+</div>
+</section>
+<section aria-labelledby="evidence-title" class="section proof" id="evidencia">
+<div class="container proof-layout">
+<div class="evidence-intro"><span class="section-index">02 / PRUEBA EXAMINABLE</span><h2 id="evidence-title">Lo que importa no es detectar un error. <em>Es saber qué hacer con él.</em></h2><p>Abre registros de la muestra V4 de 180 filas. Contrasta origen, propuesta y bitácora: algunos cambios son seguros, otros deben permanecer pendientes.</p><div class="evidence-note"><strong>Demostración sintética.</strong> 180 filas ficticias, 12 campos, 57 incidencias (10 ajustes seguros y 47 pendientes). Los archivos provienen del verificador de referencia V4, separado de SYNAPSE. No representan clientes ni una importación aprobada.</div></div>
+<div class="case-card">
+<div class="case-top"><span>EXPEDIENTE / REVISIÓN PREVIA</span><span>CASOS FICTICIOS</span></div>
+<div aria-label="Incidencias del expediente sintético de referencia" class="case-tabs" data-tabgroup="" role="tablist">
+<button aria-controls="case-price" aria-selected="true" class="case-tab" id="case-tab-price" role="tab" tabindex="0" type="button">Cambio seguro</button>
+<button aria-controls="case-duplicate" aria-selected="false" class="case-tab" id="case-tab-duplicate" role="tab" tabindex="-1" type="button">SKU repetido</button>
+<button aria-controls="case-missing" aria-selected="false" class="case-tab" id="case-tab-missing" role="tab" tabindex="-1" type="button">Precio ausente</button>
+<button aria-controls="case-stock" aria-selected="false" class="case-tab" id="case-tab-stock" role="tab" tabindex="-1" type="button">Stock inválido</button>
+</div>
+<div aria-labelledby="case-tab-price" class="case-body" id="case-price" role="tabpanel"><p class="case-micro">INC-001 · P-0004 · REGLA R01 · AJUSTE NORMALIZADO</p><h3>Corregir espacios, sin modificar la identidad.</h3><div class="case-comparison"><div><span>SKU en origen</span><strong>SKU-1004··</strong></div><div><span>SKU propuesto</span><strong>SKU-1004</strong></div></div><div class="case-action"><strong>Decisión: cambio seguro limitado</strong><p>Solo se quitan los espacios exteriores del identificador. El valor interno se conserva y la operación queda en la bitácora.</p></div><p class="case-proof">Referencia: INC-001 en la bitácora del archivo sintético.</p></div>
+<div aria-labelledby="case-tab-duplicate" class="case-body" hidden="" id="case-duplicate" role="tabpanel"><p class="case-micro">INC-002 / INC-003 · P-0006 Y P-0007 · REGLA R02 · BLOQUEANTE</p><h3>Un mismo SKU corresponde a dos registros.</h3><div class="case-comparison"><div><span>P-0006</span><strong>SKU-1006</strong></div><div><span>P-0007</span><strong>SKU-1006</strong></div></div><div class="case-action"><strong>Decisión: identidad en cuarentena</strong><p>No fusionar productos ni escoger un identificador arbitrario. Mantener ambos registros y pedir la regla autorizada.</p></div><p class="case-proof">Referencias: INC-002 e INC-003, sin modificación de SKU.</p></div>
+<div aria-labelledby="case-tab-missing" class="case-body" hidden="" id="case-missing" role="tabpanel"><p class="case-micro">INC-004 · P-0013 · REGLA R06 · BLOQUEANTE</p><h3>El precio no existe en la fuente.</h3><div class="case-comparison"><div><span>Precio de proveedor</span><strong>Vacío</strong></div><div><span>Precio propuesto</span><strong>Sin inventar</strong></div></div><div class="case-action"><strong>Decisión: pendiente de proveedor</strong><p>La ausencia se conserva. No completar un importe ficticio ni declarar el producto preparado para publicar.</p></div><p class="case-proof">Referencia: INC-004 en la bitácora.</p></div>
+<div aria-labelledby="case-tab-stock" class="case-body" hidden="" id="case-stock" role="tabpanel"><p class="case-micro">INC-005 · P-0015 · REGLA R07 · BLOQUEANTE</p><h3>Existencias negativas requieren confirmación.</h3><div class="case-comparison"><div><span>Stock de proveedor</span><strong>−3</strong></div><div><span>Stock propuesto</span><strong>−3</strong></div></div><div class="case-action"><strong>Decisión: no reemplazar por cero</strong><p>Sin autorización y fuente confirmada, transformar −3 a cero ocultaría el problema en vez de resolverlo.</p></div><p class="case-proof">Referencia: INC-005. Conservación del original.</p></div>
+<div class="case-more"><a href="https://3duardoambrosio-bit.github.io/trendify-assets/revision-v47/sitio/muestra.html#muestra" rel="noopener noreferrer" target="_blank">Examinar 180 registros y método original ↗</a></div>
+</div>
+</div>
+<div class="container evidence-deep"><details class="depth-master depth-dark"><summary><span class="archive-title">Ver el expediente completo: archivos, reglas, límites y verificabilidad</span><span class="archive-sub">No una animación: datos para comprobar el trabajo <b aria-hidden="true">+</b></span></summary><div class="depth-content"><div class="evidence-files"><a href="https://3duardoambrosio-bit.github.io/trendify-assets/revision-v47/sitio/01_FUENTE_ORIGINAL.csv">01 · Fuente original CSV ↗</a><a href="https://3duardoambrosio-bit.github.io/trendify-assets/revision-v47/sitio/02_REVISION_PROPUESTA.csv">02 · Revisión propuesta CSV ↗</a><a href="https://3duardoambrosio-bit.github.io/trendify-assets/revision-v47/sitio/03_BITACORA_INCIDENCIAS.csv">03 · Bitácora de incidencias CSV ↗</a><a href="https://3duardoambrosio-bit.github.io/trendify-assets/revision-v47/sitio/04_MANIFIESTO_VERIFICACION.json">04 · Manifiesto y límites ↗</a></div><div class="proof-numbers"><div><b>180</b><span>filas sintéticas</span></div><div><b>12</b><span>campos</span></div><div><b>57</b><span>incidencias</span></div><div><b>10</b><span>ajustes seguros</span></div><div><b>47</b><span>incidencias pendientes</span></div></div><p><strong>Qué acredita:</strong> un ejercicio de validación documentado con entradas, salidas, nueve reglas y artefactos descargables. <strong>Qué no acredita:</strong> contratos de clientes, automatización general de SYNAPSE, veracidad externa de las fuentes, importación a Shopify ni un sistema de aprobación productivo.</p><details class="nested-record"><summary>Ver nueve tipos de controles examinados</summary><ol><li>SKU: espacios externos</li><li>SKU: duplicados normalizados</li><li>Título obligatorio</li><li>Categoría en diccionario</li><li>Moneda permitida</li><li>Precio positivo y formato inequívoco</li><li>Stock entero no negativo</li><li>Variante completa</li><li>URL de imagen HTTPS</li></ol></details><p class="small-footnote">Caso MUESTRA-2026-10-A · datos ficticios reproducibles · verificador de referencia V4 independiente del motor SYNAPSE · estado: no validado para importar.</p></div></details></div>
+<div class="container lab-toggle"><details class="depth-master depth-dark"><summary><span class="archive-title">Pruébalo tú: cambia un dato y comprueba qué se bloquea</span><span class="archive-sub">Abrir laboratorio local, sin registro <b aria-hidden="true">+</b></span></summary><div class="mini-lab" aria-label="Laboratorio local para explorar reglas simples de validación">
+ <div class="lab-left">
+  <span class="lab-eyebrow">04 / PRUEBA UNA REGLA · SIN REGISTRO</span>
+  <h3>Cambia una celda.<br>Observa qué se bloquea.</h3>
+  <p class="lab-lead">Es un ejercicio autónomo en tu navegador con cinco filas ficticias derivadas de la muestra. Prueba cuatro controles limitados: SKU, duplicados, precio y stock. No utiliza el motor principal ni modifica archivos de producción.</p>
+  <label for="lab-input">Datos CSV de ejemplo (puedes editarlos)</label>
+  <textarea id="lab-input" class="lab-source" rows="7" spellcheck="false" aria-describedby="lab-hint">record_id,sku,supplier_price,stock
+P-0004," SKU-1004  ",157.00,52
+P-0006,SKU-1006,191.00,78
+P-0007,SKU-1006,208.00,12
+P-0013,SKU-1013,,11
+P-0015,SKU-1015,344.00,-3</textarea>
+  <div class="lab-controls"><button type="button" id="lab-run">Analizar este lote</button><button type="button" id="lab-reset">Restablecer muestra</button></div>
+  <p class="lab-hint" id="lab-hint">Solo acepta las cuatro columnas indicadas, en cualquier orden, hasta 25 filas. Este ejemplo opera localmente: no envía ni guarda tus datos.</p>
+ </div>
+ <div class="lab-right">
+   <span class="lab-eyebrow">RESULTADO / REVISIÓN CON CONTROL</span>
+   <p class="lab-status" id="lab-status" role="status" aria-live="polite">Ejecuta el análisis para ver decisiones por fila.</p>
+   <div class="lab-summary" aria-label="Resumen del análisis"><div><strong id="lab-total">—</strong><span>filas</span></div><div><strong id="lab-blocked">—</strong><span>filas bloqueadas</span></div><div><strong id="lab-safe">—</strong><span>normalizaciones candidatas</span></div></div>
+   <div class="lab-output" role="region" aria-label="Resultados de validación" tabindex="0"><table class="lab-result-table"><thead><tr><th>Registro</th><th>Estado</th><th>Hallazgo y decisión</th></tr></thead><tbody id="lab-rows"><tr><td colspan="3">Sin analizar.</td></tr></tbody></table></div>
+   <p class="lab-foot">Una coincidencia no prueba verdad externa. Si ambas fuentes comparten un error, este control no lo descubrirá. Los valores ambiguos se rechazan, no se convierten silenciosamente.</p>
+ </div>
+</div></details></div>
+</section>
+<section aria-labelledby="method-title" class="section method" id="metodo">
+<div class="container method-grid">
+<div class="method-intro"><span class="section-index">03 / CÓMO ENTREGAMOS</span><h2 id="method-title">Un proceso claro. Resultados examinables.</h2><p>El alcance cambia según el problema. La entrega siempre debe dejar claro qué se revisó, qué se resolvió y qué queda por decidir.</p>
+<details class="method-details"><summary>Ver criterios y límites de trabajo</summary><div><p>Antes de iniciar acordamos fuentes, volumen, riesgos, autorización y criterios de aceptación. Los errores críticos se detienen y documentan; una fuente coincidente no equivale a una verdad confirmada.</p><p>Las importaciones, automatizaciones activas y cambios irreversibles no están incluidos por defecto.</p><a href="https://3duardoambrosio-bit.github.io/trendify-assets/revision-v47/dossier-multifuente.html">Explorar el dossier ampliado ↗</a></div></details>
+<details class="method-details"><summary>Ver cómo se evita una entrega engañosa</summary><div><p>Se separan fuentes preservadas, transformaciones autorizables, excepciones críticas y resultados que necesitan aprobación. Los totales y las fórmulas no sustituyen cotejos por identidad.</p><p>Una prueba negativa debe rechazar una cabecera intercambiada, un SKU duplicado o un valor inventado. Un resultado PASS solo demuestra los casos realmente ensayados.</p></div></details>
+<details class="method-details"><summary>Ver modalidades de colaboración y entregables</summary><div><p><strong>Evaluación acotada:</strong> recibimos la necesidad, revisamos si existe información suficiente y pactamos volumen y aceptación. <strong>Intervención:</strong> entregamos archivos, informe o seguimiento según alcance. <strong>Continuidad:</strong> si el trabajo es recurrente, diseñamos pruebas, procedimientos y revisión periódica.</p><p>No se incluyen accesos productivos, publicaciones, integraciones de pago ni auditorías regulatorias sin un alcance autorizado y capacidad probada.</p></div></details>
+</div>
+<div class="method-list"><div class="method-row"><span class="step">01</span><div><strong>Definir la entrega</strong><p>Objetivo, límites y qué información debe preservarse.</p></div></div><div class="method-row"><span class="step">02</span><div><strong>Ejecutar y comprobar</strong><p>Reglas, fuentes, excepciones y revisión de resultados.</p></div></div><div class="method-row"><span class="step">03</span><div><strong>Dejar una base reutilizable</strong><p>Archivos, bitácora y próximos pasos acordados.</p></div></div></div>
+</div>
+</section>
+<section aria-labelledby="closing-title" class="closing" id="contacto"><div class="container closing-grid"><div><span class="section-index">04 / INICIAR UNA CONVERSACIÓN</span><h2 id="closing-title">Cuéntanos dónde se está deteniendo el trabajo.</h2><p>No necesitas presentar una solución técnica. Describe el problema, el resultado que buscas y qué información tienes disponible. Primero confirmamos si podemos asumir el encargo.</p><small>La consulta abre un correo para tu revisión; no envía información automáticamente.</small></div><a class="action-primary" href="https://3duardoambrosio-bit.github.io/trendify-assets/revision-v47/consulta.html">Solicitar una propuesta <span aria-hidden="true">↗</span></a></div></section>
+</main>
+<footer class="footer"><div class="container footer-grid"><span>ORDENAL · Identidad provisional · Servicios de Eduardo Ambrosio, profesional independiente. <a class="history-link" href="https://3duardoambrosio-bit.github.io/trendify-assets/revision-v47/" rel="noopener noreferrer" target="_blank">Consultar presentación V4.7 íntegra ↗</a></span><a href="mailto:3duardoambrosio@gmail.com">Correo directo ↗</a></div></footer>
+<script>
+(function(){
+  'use strict';
+  document.querySelectorAll('[data-tabgroup]').forEach(function(group){
+    var tabs=Array.from(group.querySelectorAll('[role="tab"]'));
+    function select(tab,focus){
+      tabs.forEach(function(item){
+        var active=item===tab;
+        item.setAttribute('aria-selected',String(active));
+        item.tabIndex=active?0:-1;
+        var panel=document.getElementById(item.getAttribute('aria-controls'));
+        if(panel)panel.hidden=!active;
+      });
+      if(focus)tab.focus({preventScroll:true});
+      if(group.classList.contains('selector-tabs'))tab.scrollIntoView({block:'nearest',inline:'nearest',behavior:'instant'});
+    }
+    tabs.forEach(function(tab,index){
+      tab.addEventListener('click',function(){select(tab,false)});
+      tab.addEventListener('keydown',function(event){
+        var next=-1;
+        if(event.key==='ArrowRight'||event.key==='ArrowDown')next=(index+1)%tabs.length;
+        if(event.key==='ArrowLeft'||event.key==='ArrowUp')next=(index+tabs.length-1)%tabs.length;
+        if(event.key==='Home')next=0;
+        if(event.key==='End')next=tabs.length-1;
+        if(next!==-1){event.preventDefault();select(tabs[next],true)}
+      });
+    });
+  });
+  var mobile=document.querySelector('.mobile-nav');
+  if(mobile)mobile.querySelectorAll('a').forEach(function(a){a.addEventListener('click',function(){mobile.open=false})});
+})();
+</script>
+<script>
+(() => {
+  'use strict';
+  const input=document.getElementById('lab-input');
+  const run=document.getElementById('lab-run');
+  const reset=document.getElementById('lab-reset');
+  const status=document.getElementById('lab-status');
+  const body=document.getElementById('lab-rows');
+  const max=25;
+  const initial=input.value;
+  function parseCsv(text){
+    if(text.length>6000)throw new Error('Límite del ejemplo: 6,000 caracteres.');
+    const rows=[]; let row=[],field='',quoted=false,afterQuote=false;
+    for(let i=0;i<text.length;i++){
+      const ch=text[i];
+      if(quoted){
+        if(ch==='"' && text[i+1]==='"'){field+='"';i++}
+        else if(ch==='"'){quoted=false;afterQuote=true}
+        else if(ch==='\n'||ch==='\r')throw new Error('Este ejemplo no admite saltos de línea dentro de celdas.');
+        else field+=ch;
+        continue;
+      }
+      if(afterQuote){
+        if(ch!==','&&ch!=='\n'&&ch!=='\r')throw new Error('Formato ambiguo después de una comilla.');
+        afterQuote=false;
+      }
+      if(ch==='"'){
+        if(field!=='')throw new Error('Comillas inesperadas en una celda.');
+        quoted=true;
+      }else if(ch===','){
+        row.push(field);field='';
+      }else if(ch==='\n'){
+        row.push(field);field='';
+        if(row.some(x=>x.trim()!==''))rows.push(row);
+        row=[];
+      }else if(ch==='\r'){
+        if(text[i+1]!=='\n')throw new Error('Final de línea ambiguo.');
+      }else field+=ch;
+    }
+    if(quoted)throw new Error('Comillas CSV sin cerrar.');
+    row.push(field);
+    if(row.some(x=>x.trim()!==''))rows.push(row);
+    return rows;
+  }
+  function analyze(){
+    const rows=parseCsv(input.value);
+    if(rows.length<2)throw new Error('Necesitas cabecera y al menos un registro.');
+    if(rows.length-1>max)throw new Error('Límite del ejemplo: 25 filas.');
+    const header=rows[0].map(x=>x.trim());
+    const required=['record_id','sku','supplier_price','stock'];
+    if(header.length!==4||new Set(header).size!==4||required.some(x=>!header.includes(x))){
+      throw new Error('Se requieren exactamente record_id, sku, supplier_price y stock, sin cabeceras duplicadas.');
+    }
+    const pos=Object.fromEntries(header.map((x,i)=>[x,i]));
+    const data=rows.slice(1).map((a,i)=>{
+      if(a.length!==header.length)throw new Error(`Fila ${i+2}: cantidad de columnas incorrecta.`);
+      return {row:i+2,id:a[pos.record_id],sku:a[pos.sku],price:a[pos.supplier_price],stock:a[pos.stock]};
+    });
+    const counts=new Map();
+    const ids=new Map();
+    for(const d of data){
+      const key=d.sku.trim();
+      if(key)counts.set(key,(counts.get(key)||0)+1);
+      const identity=d.id.trim();
+      if(identity)ids.set(identity,(ids.get(identity)||0)+1);
+    }
+    const result=[];
+    for(const d of data){
+      const sku=d.sku.trim();const id=d.id.trim();
+      const findings=[];let blocked=false, safe=false;
+      if(!id||ids.get(id)>1){findings.push('Identificador de registro vacío o duplicado');blocked=true}
+      if(!sku){findings.push('SKU ausente');blocked=true}
+      else if(counts.get(sku)>1){findings.push('Colisión de SKU; no fusionar registros');blocked=true}
+      if(d.price.trim()===''){findings.push('Precio ausente; pedir fuente');blocked=true}
+      else if(!/^(?:0|[1-9]\d{0,7})(?:\.\d{1,2})?$/.test(d.price.trim())||Number(d.price.trim())<=0){findings.push('Precio inválido o ambiguo');blocked=true}
+      if(!/^(?:0|[1-9]\d{0,7})$/.test(d.stock.trim())){findings.push('Stock inválido; no inferir cero');blocked=true}
+      if(!blocked&&d.sku!==sku){findings.push('Quitar espacios externos del SKU');safe=true}
+      result.push({id:id||`Fila ${d.row}`,blocked,safe,description:findings.join(' · ')||'Sin incidencias en estos cuatro campos'});
+    }
+    return result;
+  }
+  function cell(row,value){const td=document.createElement('td');td.textContent=value;row.appendChild(td);return td}
+  function update(){
+    let result;
+    try{result=analyze()}catch(e){
+      status.textContent='No procesado: '+String(e.message);
+      document.getElementById('lab-total').textContent='—';
+      document.getElementById('lab-blocked').textContent='—';
+      document.getElementById('lab-safe').textContent='—';
+      body.replaceChildren();const tr=document.createElement('tr');const td=cell(tr,'Entrada inválida: '+String(e.message));td.colSpan=3;body.appendChild(tr);
+      return;
+    }
+    const blocks=result.filter(x=>x.blocked).length;
+    const safe=result.filter(x=>x.safe).length;
+    document.getElementById('lab-total').textContent=String(result.length);
+    document.getElementById('lab-blocked').textContent=String(blocks);
+    document.getElementById('lab-safe').textContent=String(safe);
+    status.textContent=`Se examinaron ${result.length} filas: ${blocks} requieren revisión bloqueante; ${safe} admiten un ajuste propuesto. No se modificó el CSV.`;
+    body.replaceChildren();
+    for(const r of result){
+      const tr=document.createElement('tr');cell(tr,r.id);
+      const state=cell(tr,''); const pill=document.createElement('span');
+      pill.className='lab-pill '+(r.blocked?'block':r.safe?'fix':'');
+      pill.textContent=r.blocked?'Bloquear':r.safe?'Ajuste':'Sin hallazgo';state.appendChild(pill);
+      cell(tr,r.description);body.appendChild(tr);
+    }
+  }
+  run.addEventListener('click',update);
+  reset.addEventListener('click',()=>{input.value=initial;update()});
+  update();
+})();
+</script>
+</body>
+</html>

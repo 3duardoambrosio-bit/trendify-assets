@@ -1,0 +1,12 @@
+/* Formspree: solo la capa de contacto; se conserva la identidad R2.1. */
+.direct-actions{display:flex;gap:.65rem;flex-wrap:wrap;align-items:center}
+.direct-actions .button{min-height:50px;padding-inline:1.2rem}
+.direct-actions .quiet{min-height:48px}
+.direct-actions button:disabled{cursor:wait;opacity:.68}
+.direct-privacy{font-size:.87rem;line-height:1.5;color:var(--muted);margin:1rem 0 .3rem}
+.direct-privacy a{text-decoration:underline;text-underline-offset:3px}
+.direct-response{background:#edf4e9;border:2px solid #44745e;padding:1rem 1.2rem;margin-top:1.1rem;color:#183a2d}
+.direct-response strong{display:block;margin-bottom:.35rem}
+.direct-response p{margin:0}
+.trap-field{position:absolute!important;left:-9999px!important;max-width:1px!important;height:1px!important;overflow:hidden!important}
+@media(max-width:520px){.direct-actions{display:grid}.direct-actions button{width:100%;max-width:none;min-height:50px}}
