@@ -1,0 +1,33 @@
+/* ORDENAL R2.3.1 — micro-pulido tipográfico. Sin cambio de estructura, contenido ni JS.
+   Una sola cursiva editorial intencional; etiquetas de interfaz en sans coherente.
+   Los identificadores técnicos siguen en monoespaciada. */
+:root{--r231-ui:system-ui,-apple-system,'Segoe UI',Arial,sans-serif}
+/* El titular conserva la familia editorial, pero el énfasis ya no inclina una línea entera. */
+.cover .cover-intro h1 em,.connected-intro h2 em{font-style:normal;font-weight:400}
+/* La cursiva se reserva para un único acento corto en la tarjeta editorial. */
+.cover .folio-name em{font-style:italic}
+/* El encabezado, las fichas y los auxiliares comparten un solo lenguaje de interfaz. */
+.cover .folio-eyebrow,.cover .folio-tab-label,.cover .specimen,
+.cover .ticket-head,.cover .reading dt,.connected-eyebrow,.connected-rail-head{
+  font-family:var(--r231-ui);font-variant-numeric:tabular-nums;
+}
+.cover .folio-eyebrow,.connected-eyebrow{font-size:.73rem;letter-spacing:.10em;line-height:1.5}
+.cover .folio-tab-label{font-size:.73rem;letter-spacing:.085em;font-weight:650}
+.cover .specimen{font-size:.66rem;letter-spacing:.04em;font-weight:720}
+.cover .ticket-head{font-size:.77rem;letter-spacing:.015em;font-weight:580}
+.cover .reading dt{font-size:.76rem;letter-spacing:0;font-weight:620}
+.cover .decision-state>span{font-family:var(--r231-ui);letter-spacing:0;font-size:.79rem;font-weight:620}
+.cover .folio-foot span{font-family:var(--r231-ui);letter-spacing:.015em;font-size:.75rem}
+.cover .folio-foot span:last-child{color:#496855}
+/* Los códigos sí son técnicos; no necesitamos convertir el resto de la interfaz en consola. */
+.cover .ticket-head strong,.connected-count{font-family:ui-monospace,SFMono-Regular,Consolas,monospace}
+.connected-rail-head{font-size:.75rem;letter-spacing:.015em;font-weight:670}
+.connected-rail-head span:last-child{font-weight:560}
+.connected-disclaimer{font-size:.78rem;line-height:1.65;color:#4f6655}
+.connected-path p{line-height:1.62}
+/* Estados y foco claros, sin efectos que compitan con la lectura. */
+.cover .method-quicklink:focus-visible,.connected-link:focus-visible{outline:3px solid #a77f44;outline-offset:4px}
+@media(max-width:390px){
+ .cover .folio-eyebrow,.cover .folio-tab-label{font-size:.69rem}
+ .cover .specimen{font-size:.63rem}
+}

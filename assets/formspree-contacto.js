@@ -89,7 +89,7 @@
     busy = true;
     send.disabled = true;
     send.textContent = 'Enviando…';
-    notify('Enviando solicitud de forma segura…');
+    notify('Enviando solicitud…');
     try {
       const response = await fetch(form.action, {
         method: 'POST',
