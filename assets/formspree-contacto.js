@@ -53,6 +53,11 @@
       lines.push('Capacidad consultada: ' + cap.code + ' — ' + cap.title);
       payload.set('capacidad', cap.code + ' — ' + cap.title);
     }
+    const modalities={revision:'Revisión focalizada',intervencion:'Intervención operativa',continuidad:'Mejora continua'};
+    const mode=text('modalidad');
+    if(Object.hasOwn(modalities,mode)){lines.push('Modalidad de interés: '+modalities[mode]);payload.set('modalidad',modalities[mode]);}
+    const choices={mantener:'Conservar',revisar:'Revisar alternativas',contexto:'Necesito más contexto'};
+    const choice=params.get('decision');if(Object.hasOwn(choices,choice)){lines.push('Decisión explorada: '+choices[choice]);payload.set('decision_explorada',choices[choice]);}
     const compare = params.get('comparar');
     if (Object.hasOwn(cases, compare)) {
       lines.push('Comparación de referencia: ' + cases[compare].short);
