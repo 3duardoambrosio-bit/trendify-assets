@@ -208,6 +208,7 @@ function prepareForm(form){
  if(!form.checkValidity()){form.reportValidity();return;}
  const values=new FormData(form),label=area.selectedOptions[0].textContent;
  const lines=['Hola Eduardo,','','Quisiera consultar el siguiente alcance.','Área: '+label];
+ for(const [key,label]of [['propuesta_origen','Propuesta'],['enfoque_propuesta','Enfoque de origen'],['ficha_propuesta','Ficha de referencia']]){const v=String(values.get(key)||'').trim();if(v)lines.push(label+': '+v);}
  if(chosen)lines.push('Situación de referencia: '+data.cases[chosen].short);
  if(example)lines.push('Muestra de referencia: '+example);
  if(cap)lines.push('Capacidad por evaluar: '+cap.code+' — '+cap.title);
