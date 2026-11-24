@@ -24,4 +24,18 @@ window.addEventListener('DOMContentLoaded',()=>{
  }
  const back=document.getElementById('return-case');if(back){back.href=profile.url+(piece?'#revision':'#oportunidades');back.textContent='Volver a la propuesta personalizada';}
 });
+</script><script>
+window.addEventListener('DOMContentLoaded',()=>{
+ const p=new URLSearchParams(location.search);if(p.get('asistente')!=='1')return;
+ const sources={publicas:'Enlaces o información pública',archivo:'Un archivo o registro autorizado',varias:'Dos o más fuentes autorizadas',sin:'Información aún no disponible'};
+ const sizes={pequeno:'Muestra pequeña, un resultado',acotado:'Trabajo acotado, varias comprobaciones',complejo:'Proceso completo, integración o trabajo recurrente',desconocido:'Alcance por definir'};
+ const source=p.get('fuentes'),size=p.get('tamano');
+ if(!Object.hasOwn(sources,source)||!Object.hasOwn(sizes,size))return;
+ const ref=document.getElementById('referencia'),volume=document.getElementById('volumen'),box=document.getElementById('consult-intent'),txt=document.getElementById('consult-intent-text');
+ if(!ref||!volume||!box||!txt)return;
+ if(!ref.value)ref.value=sources[source];
+ if(!volume.value)volume.value=sizes[size];
+ const budget=document.getElementById('presupuesto');const budgetText=budget?.selectedOptions[0]?.textContent||'Por definir';
+ box.hidden=false;txt.textContent=[txt.textContent,'Asistente: '+sources[source],sizes[size],budgetText].filter(Boolean).join(' · ');
+});
 </script></body></html>
