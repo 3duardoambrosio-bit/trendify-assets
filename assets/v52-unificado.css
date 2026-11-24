@@ -64,3 +64,8 @@ body.v52-page{font-family:Inter,ui-sans-serif,system-ui,-apple-system,'Segoe UI'
 .v52-page .contact-process ol{padding-left:1.25rem;margin:0;display:grid;gap:8px;color:#405d4b;font-size:.9rem}
 @media(max-width:980px){.v52-nav .v52-links{display:none}.v52-mobile{display:block}}
 @media(max-width:520px){.v52-nav .v52-inner{min-height:64px}.v52-nav .v52-brand{font-size:1rem}.v52-page .contact-form{padding:18px}.v52-page .field-pair>*{min-width:0}}
+
+/* ORDENAL Evolución — compact visual seal; no change to navigation or logic. */
+.v52-nav .brand,.v52-nav .v52-brand{position:relative;padding-left:42px;min-height:33px;justify-content:center;}
+.v52-nav .brand:before,.v52-nav .v52-brand:before{content:"";display:block;position:absolute;left:0;top:50%;transform:translateY(-50%);width:32px;height:29px;background:url("https://3duardoambrosio-bit.github.io/trendify-assets/assets/ordenal-evolucion.svg") center/contain no-repeat;}
+@media(max-width:420px){.v52-nav .brand,.v52-nav .v52-brand{padding-left:32px}.v52-nav .brand:before,.v52-nav .v52-brand:before{width:25px;height:24px}}
