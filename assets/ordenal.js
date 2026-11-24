@@ -211,6 +211,12 @@ function prepareForm(form){
  if(chosen)lines.push('Situación de referencia: '+data.cases[chosen].short);
  if(example)lines.push('Muestra de referencia: '+example);
  if(cap)lines.push('Capacidad por evaluar: '+cap.code+' — '+cap.title);
+ const mode={revision:'Revisión focalizada',intervencion:'Intervención operativa',continuidad:'Mejora continua'}[String(values.get('modalidad')||'')];
+ if(mode)lines.push('Modalidad de interés: '+mode);
+ const explored={mantener:'Conservar',revisar:'Revisar alternativas',contexto:'Necesito más contexto'}[params.get('decision')];
+ if(explored)lines.push('Decisión explorada: '+explored);
+ if(String(values.get('nombre')||'').trim())lines.push('Contacto: '+String(values.get('nombre')).trim());
+ if(String(values.get('email')||'').trim())lines.push('Correo de respuesta: '+String(values.get('email')).trim());
  lines.push('Objetivo: '+goal.value.trim());
  for(const [key,name] of [['formato','Formato'],['volumen','Volumen'],['fecha','Fecha objetivo'],['decision','Decisión'],['referencia','Fuente disponible'],['restriccion','Error que debemos evitar']]){
   const value=String(values.get(key)||'').trim();if(value)lines.push(name+': '+value);
