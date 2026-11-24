@@ -214,6 +214,7 @@ function prepareForm(form){
  if(cap)lines.push('Capacidad por evaluar: '+cap.code+' — '+cap.title);
  const mode={revision:'Revisión focalizada',intervencion:'Intervención operativa',continuidad:'Mejora continua'}[String(values.get('modalidad')||'')];
  if(mode)lines.push('Modalidad de interés: '+mode);
+ const budgetLabels={consulta:'Consulta inicial sin cargo',inicial:'Primera intervención desde $390 MXN',acotado:'Trabajo acotado desde $790 MXN',personalizado:'Cotización individual'};const budget=String(values.get('presupuesto')||'');if(Object.hasOwn(budgetLabels,budget))lines.push('Referencia económica orientativa: '+budgetLabels[budget]);
  const explored={mantener:'Conservar',revisar:'Revisar alternativas',contexto:'Necesito más contexto'}[params.get('decision')];
  if(explored)lines.push('Decisión explorada: '+explored);
  if(String(values.get('nombre')||'').trim())lines.push('Contacto: '+String(values.get('nombre')).trim());
