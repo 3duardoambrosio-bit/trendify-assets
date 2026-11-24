@@ -24,7 +24,7 @@ function evaluatePortfolio(items,budget,hours,mode){
   $('st-budget').value=isUSD?750:12000;$('st-hours').value=24;$('st-mode').value='conservative';$('st-items').replaceChildren();
   seeds.forEach((row,i)=>{const d=create('div');d.className='studio-item';d.append(create('strong',names[i]));row.forEach((v,j)=>{const l=create('label',labels[j]),input=create('input');input.id='st-'+i+'-'+j;input.type='number';input.min='0';input.max=j===1?'10000':j===2||j===4?'10000':'1000000';input.step=j===0||j===3?'.01':'1';input.required=true;input.value=v;l.htmlFor=input.id;l.append(input);d.append(l);});$('st-items').append(d);});
  }
- function read(id,cents){const e=$(id),v=e.valueAsNumber;if(!e.checkValidity()||!Number.isFinite(v))throw Error('Comprueba los valores de entrada.');return cents?Math.round(v*100):v;}
+ function read(id,cents){const e=$(id),v=e.valueAsNumber;if(!e.checkValidity()||!Number.isFinite(v))throw Error('Comprueba el campo: '+e.parentElement.textContent.trim()+'.');return cents?Math.round(v*100):v;}
  function invalidate(){snapshot=null;$('st-result').hidden=true;$('st-error').hidden=true;}
  function calculate(){
   invalidate();try{
