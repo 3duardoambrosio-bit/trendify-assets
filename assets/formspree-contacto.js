@@ -55,6 +55,8 @@
     }
     for(const [key,label]of [['propuesta_origen','Propuesta'],['enfoque_propuesta','Enfoque de origen'],['ficha_propuesta','Ficha de referencia']]){const v=String(payload.get(key)||'').trim();if(v)lines.push(label+': '+v);}
     const modalities={revision:'Revisión focalizada',intervencion:'Intervención operativa',continuidad:'Mejora continua'};
+    const budgetLabels={consulta:'Consulta inicial sin cargo',inicial:'Primera intervención desde $390 MXN',acotado:'Trabajo acotado desde $790 MXN',personalizado:'Cotización individual'};
+    const budget=text('presupuesto');payload.delete('presupuesto');if(Object.hasOwn(budgetLabels,budget)){lines.push('Referencia económica orientativa: '+budgetLabels[budget]);payload.set('presupuesto',budgetLabels[budget]);}
     const mode=text('modalidad');
     if(Object.hasOwn(modalities,mode)){lines.push('Modalidad de interés: '+modalities[mode]);payload.set('modalidad',modalities[mode]);}
     const choices={mantener:'Conservar',revisar:'Revisar alternativas',contexto:'Necesito más contexto'};
