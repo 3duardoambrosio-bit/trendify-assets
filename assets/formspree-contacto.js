@@ -53,6 +53,7 @@
       lines.push('Capacidad consultada: ' + cap.code + ' — ' + cap.title);
       payload.set('capacidad', cap.code + ' — ' + cap.title);
     }
+    for(const [key,label]of [['propuesta_origen','Propuesta'],['enfoque_propuesta','Enfoque de origen'],['ficha_propuesta','Ficha de referencia']]){const v=String(payload.get(key)||'').trim();if(v)lines.push(label+': '+v);}
     const modalities={revision:'Revisión focalizada',intervencion:'Intervención operativa',continuidad:'Mejora continua'};
     const mode=text('modalidad');
     if(Object.hasOwn(modalities,mode)){lines.push('Modalidad de interés: '+modalities[mode]);payload.set('modalidad',modalities[mode]);}
