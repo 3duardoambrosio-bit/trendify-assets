@@ -1,14 +1,14 @@
 (function(root){
 "use strict";
-const orders=[{id:"P1",sku:0,qty:8,due:3,value:1450,weight:5},{id:"P2",sku:1,qty:9,due:4,value:1800,weight:6},{id:"P3",sku:0,qty:12,due:6,value:2450,weight:8},{id:"P4",sku:1,qty:8,due:7,value:1700,weight:5},{id:"P5",sku:0,qty:6,due:8,value:1100,weight:3}];
-const buys=[{id:"C1",sku:0,qty:8,cost:950,day:2,fragile:true},{id:"C2",sku:1,qty:10,cost:1250,day:2,fragile:true},{id:"C3",sku:0,qty:12,cost:1550,day:4,fragile:false},{id:"C4",sku:1,qty:8,cost:1150,day:5,fragile:false},{id:"C5",sku:0,qty:8,cost:1200,day:2,fragile:false},{id:"C6",sku:1,qty:10,cost:900,day:3,fragile:false,needsProof:true},{id:"C7",sku:0,qty:6,cost:780,day:6,fragile:true}];
+const orders=[{id:"P1",sku:0,qty:8,due:3,value:1450,weight:5},{id:"P2",sku:1,qty:9,due:3,value:1800,weight:6},{id:"P3",sku:0,qty:12,due:5,value:2450,weight:8},{id:"P4",sku:1,qty:8,due:7,value:1700,weight:5},{id:"P5",sku:0,qty:6,due:8,value:1100,weight:3}];
+const buys=[{id:"C1",sku:0,qty:8,cost:950,day:2,fragile:true},{id:"C2",sku:1,qty:10,cost:1250,day:2,fragile:true},{id:"C3",sku:0,qty:12,cost:1550,day:4,pay:3,fragile:false},{id:"C4",sku:1,qty:8,cost:1150,day:5,pay:4,fragile:false},{id:"C5",sku:0,qty:8,cost:1200,day:2,fragile:false},{id:"C6",sku:1,qty:10,cost:900,day:2,fragile:false,needsProof:true},{id:"C7",sku:0,qty:6,cost:780,day:6,pay:5,fragile:true}];
 const scenarios=[{name:"Normal",delay:0,late:0},{name:"Proveedor tarde",delay:2,late:0},{name:"Cobro tarde",delay:0,late:3},{name:"Ambos retrasos",delay:2,late:3}];
 const pick=(a,m)=>a.filter((_,i)=>m&(1<<i));
 function simulate(cash,bs,os,s){
  let stock=[12,8],balance=cash,min=cash,issues=[],timeline=[cash];
  for(let d=0;d<=13;d++){
   for(const o of os)if(o.due+1+s.late===d)balance+=o.value;
-  for(const p of bs)if(d===0)balance-=p.cost;
+  for(const p of bs)if(d===(p.pay||0))balance-=p.cost;
   min=Math.min(min,balance);if(balance<0&&(!issues.some(x=>x.type==="caja")))issues.push({type:"caja",day:d,short:-balance});
   for(const p of bs)if(p.day+(p.fragile?s.delay:0)===d)stock[p.sku]+=p.qty;
   for(const o of os)if(o.due===d){stock[o.sku]-=o.qty;if(stock[o.sku]<0)issues.push({type:"inventario",day:d,order:o.id,short:-stock[o.sku]});}
@@ -67,7 +67,7 @@ function mount(){
    metrics([["Planes evaluados",robust.checked.toLocaleString("es-MX")],["Planes resistentes",robust.feasible],["Compromisos elegidos",b.orders.length]]);
    table(["Escenario","Plan normal","Plan resistente","Caja mínima resistente"],scenarios.map((s,i)=>[s.name,a.outcomes[i].ok?"Cumple":"Falla",b.outcomes[i].ok?"Cumple":"Falla",mx(b.outcomes[i].min)]));
    $("lab-explain").textContent="El plan resistente elige "+(b.orders.join(", ")||"ningún pedido")+" y "+(b.buys.join(", ")||"ninguna compra")+". El plan normal supera "+a.outcomes.filter(s=>s.ok).length+"/4 escenarios; el resistente, 4/4.";
-   details(["Objetivo: maximizar prioridad de pedidos, luego contribución y peor caja; no se supone demanda adicional.","Plan normal: "+(a.orders.join(", ")||"sin pedidos")+"; contribución "+mx(a.net)+". Plan resistente: "+mx(b.net)+".","Pedidos no elegidos: "+(orders.filter(o=>!b.orders.includes(o.id)).map(o=>o.id).join(", ")||"ninguno")+". Pueden renegociarse; no se aceptan automáticamente.","La fuente C6 solo entra cuando confirmas su disponibilidad. Los pagos de compras se realizan al inicio; las entregas y cobros tienen fechas explícitas."]);
+   details(["Objetivo: maximizar prioridad de pedidos, luego contribución y peor caja; no se supone demanda adicional.","Plan normal: "+(a.orders.join(", ")||"sin pedidos")+"; contribución "+mx(a.net)+". Plan resistente: "+mx(b.net)+".","Pedidos no elegidos: "+(orders.filter(o=>!b.orders.includes(o.id)).map(o=>o.id).join(", ")||"ninguno")+". Pueden renegociarse; no se aceptan automáticamente.","La fuente C6 solo entra cuando confirmas su disponibilidad. Las compras tienen fechas de pago y llegada; las entregas y cobros tienen fechas explícitas. Los cobros del día preceden a los pagos del mismo día en esta simulación."]);
   }else if(mode==="trace"){
    const r=reconcile($("lab-pay").checked,$("lab-receipt").checked);report={mode,...r};
    metrics([["Registros cruzados",r.result.length],["Listos para revisión",r.ready],["Excepciones abiertas",r.pending]]);
