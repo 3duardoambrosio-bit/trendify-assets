@@ -2,7 +2,7 @@
 "use strict";
 const main=document.getElementById("main")||document.querySelector("main");if(!main)return;
 const views={inicio:"inicio",capacidades:"inicio","capacidad-verificable":"decisiones",decision:"decisiones",explorar:"soluciones",evidencia:"evidencia",presupuesto:"guia",contacto:"contacto",expediente:"intervencion"};
-const labels={inicio:"Inicio",decisiones:"Decisiones",soluciones:"Soluciones",evidencia:"Evidencia",guia:"Precios y guía",contacto:"Contacto",intervencion:"Expediente"};
+const labels={inicio:"Inicio",decisiones:"Decisiones",soluciones:"Soluciones",evidencia:"Evidencia",guia:"Precios y guía",contacto:"Contacto",intervencion:"Expediente",laboratorio:"Laboratorio"};
 function viewFor(id){return views[id]||"inicio";}
 const groups=[...main.querySelectorAll("[data-ord-view]")];if(!groups.length)return;
 const reduced=window.matchMedia("(prefers-reduced-motion: reduce)");
