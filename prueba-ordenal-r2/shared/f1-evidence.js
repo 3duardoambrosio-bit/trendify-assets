@@ -21,7 +21,7 @@ function mountHero(){
   $("hero-explain").textContent=phase===0?"Identificamos los movimientos y la restricción: no gastar más dinero del disponible.":phase===1?"Saldo mínimo: "+fmt(r.min)+" · saldo final: "+fmt(r.end)+".": "Ambas secuencias cierran en "+fmt(pay.end)+". Una exige "+fmt(-pay.min)+" adicionales; la otra conserva liquidez.";
   $("f1-hero-legend").hidden=phase!==2;
  }
- tabs.forEach(b=>b.addEventListener("click",()=>{phase=Number(b.dataset.evolution);render();}));
+ tabs.forEach(b=>b.addEventListener("click",()=>{const next=Number(b.dataset.evolution);if(next===phase)return;phase=next;render();const stage=root.querySelector(".f1-hero-stage");if(stage&&!window.matchMedia("(prefers-reduced-motion: reduce)").matches){stage.classList.remove("ord-stage-enter");void stage.offsetWidth;stage.classList.add("ord-stage-enter");}}));
  orders.forEach(b=>b.addEventListener("click",()=>{order=b.dataset.heroOrder;render();}));render();
 }
 function mountEvidence(){
