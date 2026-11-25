@@ -1,0 +1,8 @@
+ORDENAL | Nota de evidencia experimental F1 · 24 de noviembre de 2026
+Experimentos sintéticos; no son resultados de clientes, garantía de superioridad ni autorización de producción.
+E01: nueve fixtures. La agregación mensual produjo seis aceptaciones inseguras bajo el criterio experimental; libro por eventos y libro convencional acertaron 9/9. Caso web: saldo inicial MXN 1000; pago 9000; cobro 10000. Pago primero: -8000, 2000; mínimo -8000. Cobro primero: 11000, 2000; mínimo incluyendo inicio 1000.
+E03: enumeración y solver coincidieron 42/42; retirar dependencias y exclusiones produjo cuatro carteras inválidas de seis. No prueba superioridad de un solver.
+E06: componente original 5/8; recibo consultable 8/8; transacción convencional 8/8 cuando efecto y acuse podían guardarse juntos. Destino local de laboratorio.
+E09: pérdida máxima sintética 10 a 2 frente al mejor cuestionario fijo en un escenario multicanal con dos preguntas. En otros tres contextos el cuestionario fijo igualó al adaptativo. No mide retorno ni ahorro humano.
+Fuente: expediente ORDENAL_ASTRA_F1_FINAL, dictamen y experimentos E01/E03/E06/E09. El informe original declara reproducción de cuatro experimentos; nuestra revisión verificó integridad y las políticas E09, pero no completó reproducción independiente de los otros tres. La web reproduce solo las dos secuencias E01.
+Validación pendiente: comparación ciega con un profesional competente usando las mismas herramientas, medir coste humano total por decisión aceptada y transferencia a casos de terceros.
