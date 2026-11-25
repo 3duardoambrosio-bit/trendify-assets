@@ -11,3 +11,17 @@
 .f1-hero-stage{display:grid;align-content:center}.f1-hero-stage>[hidden]{display:none!important}
 @media(min-width:761px){.hero{padding-block:clamp(44px,5vw,82px)}}
 @media(max-width:760px){.f1-path{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:86%;overflow-x:auto;scroll-snap-type:x proximity;scrollbar-width:thin;padding-bottom:10px;gap:12px}.f1-path article{scroll-snap-align:start}.hero .hero-main .actions{column-gap:9px}.hero .hero-contact{justify-self:end}}
+
+/* R5.1: chat is visible on entry and on every mobile view. */
+@media(max-width:760px){
+.mobile-dock{grid-template-columns:repeat(4,minmax(0,1fr));}
+.mobile-dock #chat-launch{position:fixed;right:max(14px,env(safe-area-inset-right));bottom:calc(77px + env(safe-area-inset-bottom));z-index:33;display:flex;flex-direction:row;justify-content:center;align-items:center;gap:9px;min-width:0;min-height:48px;width:auto;padding:11px 16px;border:1px solid #bfa678;border-radius:28px;background:#143b32;color:#fffdf7;box-shadow:0 5px 19px #102f2860;font-size:.82rem;line-height:1.25;letter-spacing:0;transition:background-color .2s ease,box-shadow .2s ease}
+.mobile-dock #chat-launch svg{width:23px;height:23px;flex:none;color:#e5d1a6}
+.mobile-dock #chat-launch .mobile-chat-label{display:inline}
+.mobile-dock #chat-launch .desktop-chat-label{display:none}
+.mobile-dock #chat-launch:active{background:#285346}
+.mobile-dock #chat-launch:focus-visible{outline:2px solid #b89155;outline-offset:3px}
+.chat-open-mobile .mobile-dock #chat-launch{visibility:hidden}
+body:has(main.ord-views-ready) footer{padding-bottom:calc(68px + env(safe-area-inset-bottom))}
+}
+@media(prefers-reduced-motion:reduce){.mobile-dock #chat-launch{transition:none}}
