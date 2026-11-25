@@ -1,8 +1,8 @@
 (function(){
 "use strict";
 const main=document.getElementById("main")||document.querySelector("main");if(!main)return;
-const views={inicio:"inicio",capacidades:"inicio","capacidad-verificable":"decisiones",decision:"decisiones",explorar:"soluciones",evidencia:"evidencia",presupuesto:"guia",contacto:"contacto"};
-const labels={inicio:"Inicio",decisiones:"Decisiones",soluciones:"Soluciones",evidencia:"Evidencia",guia:"Precios y guía",contacto:"Contacto"};
+const views={inicio:"inicio",capacidades:"inicio","capacidad-verificable":"decisiones",decision:"decisiones",explorar:"soluciones",evidencia:"evidencia",presupuesto:"guia",contacto:"contacto",expediente:"intervencion"};
+const labels={inicio:"Inicio",decisiones:"Decisiones",soluciones:"Soluciones",evidencia:"Evidencia",guia:"Precios y guía",contacto:"Contacto",intervencion:"Expediente"};
 function viewFor(id){return views[id]||"inicio";}
 const groups=[...main.querySelectorAll("[data-ord-view]")];if(!groups.length)return;
 const reduced=window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -32,7 +32,7 @@ function show(t,opts={}){
   const node=t===main?groups.find(el=>!el.hidden):t;
   if(focus&&node){const heading=node.matches("section")?node.querySelector("h1,h2"):node.querySelector?.("h1,h2")||node;
    if(heading){if(!heading.hasAttribute("tabindex"))heading.setAttribute("tabindex","-1");heading.focus({preventScroll:true});}}
-  if(t.id==="inicio"||t===main&&active==="inicio")window.scrollTo({top:0,behavior:"instant"});
+  if(t.id==="inicio"||t===main&&active==="inicio"||changed&&view!=="inicio"&&t===groups.find(el=>!el.hidden))window.scrollTo({top:0,behavior:"instant"});
   else node?.scrollIntoView({block:"start",behavior:changed||reduced.matches?"instant":"smooth"});
  }
  if(changed)window.dispatchEvent(new Event("resize"));
